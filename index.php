@@ -42,7 +42,7 @@
           <div class="row">
               <div class="col-lg-8 col-md-8">
                 <ul class="top-info text-center text-md-left">
-                  <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">Shop no 61, Haware Nirmiti CHS, sector 22,plot no 15, Kamothe, Navi Mumbai, 410206</p>
+                  <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">Shop no 61, Haware Nirmiti CHS LTD, sector 22,plot no 15, Kamothe, Navi Mumbai, 410206</p>
                   </li>
                 </ul>
               </div>
