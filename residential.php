@@ -102,13 +102,17 @@ include('include/config.php');
 
 <section id="main-container" class="main-container">
   <div class="container">
+  <?php
+            $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor2'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
     <div class="row">
         <div class="col-lg-6">
-          <h3 class="column-title">Who We Are</h3>
-          <p>Consultants tend to be individuals with at least a few years of experience under their belts in a particular field or focus. It’s this insight that they then sell as a service to other companies.
+          <h3 class="column-title"><?php echo $arr['name']?></h3>
+          <p><?php echo $arr['description']?>
           </p>
-          <blockquote><p>For people who rely on very steady income, being a consultant full-time may lead to some stressful days.</p></blockquote>
-          <p>a Consultant is a person who provides expert advice professionally – usually, an experienced professional in a specific field who possesses a comprehensive knowledge of the subject matter and uses it to help solve a client's problem.</p>
+          <blockquote><p><?php echo $arr['content']?></p></blockquote>
+          <p><?php echo $arr['d_name']?></p>
 
         </div><!-- Col end -->
 
@@ -150,7 +154,7 @@ include('include/config.php');
 
         </div><!-- Col end -->
     </div><!-- Content row end -->
-
+<?php } ?>
   </div><!-- Container end -->
 </section><!-- Main container end -->
 

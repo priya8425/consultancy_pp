@@ -3,16 +3,16 @@ include("../../../include/config.php");
 if(isset($_POST["submit"])){
 
     $name=$_POST['name'];
-    $content=$_POST['content'];
-    $description_name=$_POST['description_name'];
     $description=$_POST['description'];
+    $content=$_POST['content'];
+    $d_name=$_POST['d_name'];
     $image=$_FILES['image']['name'];   
     $filedet=$_FILES['image']['tmp_name'];
     $loc="../../dist/img/credit/".$image;
     move_uploaded_file($filedet,$loc);
    
     
-    $sql = "UPDATE services SET name = '$name', content = '$content', description_name = '$description_name', description = '$description', image = '$image' WHERE page_name = 'cctv';";
+    $sql = "UPDATE residental SET name = '$name', description = '$description', content = '$content', d_name = '$d_name', image = '$image' WHERE page_name = 'cctv';";
     $result=mysqli_query($conn, $sql);
     
     }
@@ -894,6 +894,10 @@ if(isset($_POST["submit"])){
                     <input type="text" class="form-control" name="name" id="exampleInputEmail1" placeholder="Enter email">
                   </div>
                   <div class="form-group">
+                    <label for="exampleInputEmail1">Description</label>
+                    <textarea type="text" class="form-control" name="description" id="example2" placeholder="Enter Description"></textarea>
+                  </div>
+                  <div class="form-group">
                     <label for="exampleInputPassword1">Content</label>
                     <textarea type="text" class="form-control" name="content" id="example2" placeholder="Enter Description"></textarea>
                   </div>
@@ -911,12 +915,9 @@ if(isset($_POST["submit"])){
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" name="description_name" id="example2" placeholder="Enter Description">
+                    <input type="text" class="form-control" name="d_name" id="example2" placeholder="Enter Description">
                   </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Description</label>
-                    <textarea type="text" class="form-control" name="description" id="example2" placeholder="Enter Description"></textarea>
-                  </div>
+                  
                 </div>
                 <!-- /.card-body -->
 
@@ -963,7 +964,7 @@ if(isset($_POST["submit"])){
                     </thead>
                   <tbody>
                       <?php     
-                        $sql=mysqli_query($conn,"select * from services");
+                        $sql=mysqli_query($conn,"select * from  residental");
                         $count=1;
                         while($arr=mysqli_fetch_array($sql)){
                         ?>
@@ -974,7 +975,7 @@ if(isset($_POST["submit"])){
                         <td><?php echo $arr['content'];?></td>
                         <td><img src="../../dist/img/credit/<?php echo $arr['image'];?>"
                             style="height:150px; width:150px;"></td>
-                            <td><?php echo $arr['description_name'];?></td>
+                            <td><?php echo $arr['d_name'];?></td>
                         
                         <td> 
                         <a href="#"><button type="button"
