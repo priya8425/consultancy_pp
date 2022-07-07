@@ -8,7 +8,7 @@
                 
                 <div class="logo" style="display:flex;">
                     <a class="d-block" href="index.php" style="display:flex;">
-                      <img loading="lazy" src="images/pp.webp" alt="PP Consultancy" style="height: 60px; ">
+                      <img loading="lazy" src="images/pp.webp" alt="PP Consultancy" style="height: 60px; border-radius: 50% ">
                      
                     </a>
                          <h3 style="margin: auto;margin-left: 10px;">PP Consultancy Services</h3>
