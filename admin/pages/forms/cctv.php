@@ -4,6 +4,7 @@ if(isset($_POST["submit"])){
 
     $name=$_POST['name'];
     $content=$_POST['content'];
+    $description_name=$_POST['description_name'];
     $description=$_POST['description'];
     $image=$_FILES['image']['name'];   
     $filedet=$_FILES['image']['tmp_name'];
@@ -11,7 +12,7 @@ if(isset($_POST["submit"])){
     move_uploaded_file($filedet,$loc);
    
     
-    $sql = "UPDATE services SET name = '$name', content = '$content', description = '$description', image = '$image' WHERE page_name = 'cctv';";
+    $sql = "UPDATE services SET name = '$name', content = '$content', description_name = '$description_name', description = '$description', image = '$image' WHERE page_name = 'cctv';";
     $result=mysqli_query($conn, $sql);
     
     }
@@ -27,6 +28,15 @@ if(isset($_POST["submit"])){
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
@@ -900,6 +910,10 @@ if(isset($_POST["submit"])){
                     </div>
                   </div>
                   <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" class="form-control" name="description_name" id="example2" placeholder="Enter Description">
+                  </div>
+                  <div class="form-group">
                     <label for="exampleInputEmail1">Description</label>
                     <textarea type="text" class="form-control" name="description" id="example2" placeholder="Enter Description"></textarea>
                   </div>
@@ -928,22 +942,25 @@ if(isset($_POST["submit"])){
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-    <div class="card">
-              
+          <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">DataTable with default features</h3>
+              </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <table class="table table-bordered">
+                <table id="example1" class="table table-bordered table-striped">
                 <thead>
                       <tr>
                         <th>Sr.No</th>
                         <th>Name</th>
                         <th>Content</th>
                         <th>Image</th>
+                        <th>D-name</th>
                         <th>Description</th>
                         <th>Action</th>
                       </tr>
                     </thead>
-                    <tbody>
+                  <tbody>
                       <?php     
                         $sql=mysqli_query($conn,"select * from services");
                         $count=1;
@@ -955,6 +972,7 @@ if(isset($_POST["submit"])){
                         <td><?php echo $arr['content'];?></td>
                         <td><img src="../../dist/img/credit/<?php echo $arr['image'];?>"
                             style="height:150px; width:150px;"></td>
+                            <td><?php echo $arr['description_name'];?></td>
                         <td><?php echo $arr['description'];?></td>
                         <td> 
                         <a href="#"><button type="button"
@@ -970,22 +988,11 @@ if(isset($_POST["submit"])){
                 </table>
               </div>
               <!-- /.card-body -->
-              <div class="card-footer clearfix">
-                <ul class="pagination pagination-sm m-0 float-right">
-                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                </ul>
-              </div>
-            </div>
-    <!-- /.content -->
- 
             </div>
             </section>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
+      
     
   <!-- /.content-wrapper -->
   <footer class="main-footer">
@@ -1013,7 +1020,44 @@ if(isset($_POST["submit"])){
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../plugins/jszip/jszip.min.js"></script>
+<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
 <!-- Page specific script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
 <script>
 $(function () {
   bsCustomFileInput.init();

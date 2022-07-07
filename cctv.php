@@ -1,5 +1,5 @@
 <?php 
-include("include/config.php");
+include('include/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -123,110 +123,49 @@ include("include/config.php");
             </ul>
           </div><!-- Widget end -->
 
-          <div class="widget">
-            <div class="quote-item quote-border">
-              <div class="quote-text-border">
-               A go getter and a quick decision maker with a focus on vision, values and people — these qualities and traits.
-              </div>
-
-              <div class="quote-item-footer">
-                <img loading="lazy" class="testimonial-thumb" src="images/clients/5.jpg" alt="testimonial">
-                <div class="quote-item-info">
-                  <h3 class="quote-author">qveno Cash</h3>
-                  <span class="quote-subtext"></span>
-                </div>
-              </div>
-            </div><!-- Quote item end -->
-
-          </div><!-- Widget end -->
+         <!-- Widget end -->
 
         </div><!-- Sidebar end -->
       </div><!-- Sidebar Col end -->
 
       <div class="col-xl-8 col-lg-8">
+      <?php
+            $sql=mysqli_query($conn,"Select * from  services where page_name= 'cctv'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
         <div class="content-inner-page">
 
-          <h2 class="column-title mrt-0">CCTV Installation</h2>
+          <h2 class="column-title mrt-0"><?php echo $arr['name']?></h2>
 
           <div class="row">
             <div class="col-md-12">
-              <p>Security Guards are unreliable, inefficient and expensive. <br>
-
-Securens is the pioneer of the highly successful ACTIVE DETERRENCE™ technology based on Human Detection Video Analytics that not only detects intrusion instantly on a real-time basis but also prevents it immediately using Video Verification, Lights and Sound.
-</p>
-              <p>ACTIVE DETERRENCE™ of Securens has almost 100% success rate.</p>
+              <p><?php echo $arr['content']?></p>
+             
             </div><!-- col end -->
           </div><!-- 1st row end-->
 
           <div class="gap-40"></div>
 
-          <div id="page-slider" class="page-slider">
-            <div class="item">
-              <img loading="lazy" class="img-fluid" src="images/projects/cctv1.jpg" alt="project-slider-image"style="height:585px" />
-            </div>
-
-            <div class="item">
-              <img loading="lazy" class="img-fluid" src="images/projects/cctv2.jpg" alt="project-slider-image" style="height:585px"/>
-            </div>
+          
+            <div class="course-img">
+                                <img src="admin/dist/img/credit/<?php echo $arr['image'];?>"
+                                    style="height: 250px; width: 500px; ">
+                            </div>
+            
           </div><!-- Page slider end -->
 
           <div class="gap-40"></div>
 
           <div class="row">
             <div class="col-md-6">
-              <h3 class="column-title-small">Our success has been due to 5 key factors ?</h3>
+              <h3><?php echo $arr['description_name']?></h3>
+            <p><?php echo $arr['content']?></p>
 
-              <ul class="list-arrow">
-                <li>All our products add clear and quantitative value to customers including reducing up to 60% in security costs.</li>
-                <li>Our In-House built intrusion detection surveillance monitoring software that efficiently deters any detected intrusion.</li>
-                <li>Our multiple Awards winning Alarm monitoring centre that has deterred almost 100% of the attempted crimes.</li>
-                <li>Our fine-tuned video analytics capability that integrates traditional alarms with Video Analytics to deliver superlative security.</li>
-                <li>Our highly acknowledged ALL India service and installation capability.</li>
-              </ul>
             </div>
 
-            <div class="col-md-6 mt-5 mt-md-0">
-              <h3 class="column-title-small">You Should Know</h3>
-
-              <div class="accordion accordion-group accordion-classic" id="construction-accordion">
-                <div class="card">
-                  <div class="card-header p-0 bg-transparent" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left" type="button" data-toggle="collapse"
-                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        In-House monitoring ?
-                      </button>
-                    </h2>
-                  </div>
-
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                    data-parent="#construction-accordion">
-                    <div class="card-body">
-                      eSurveillance is a specialized business.  There are a whole lot of investments that go into building a monitoring center and incorporating redundancy that is quite expensive if you have to do it yourself.  If you choose not to spend good amount of money, then the reliability reduced drastically making the whole investment useless.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header p-0 bg-transparent" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
-                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Professional Monitoring ?
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                    data-parent="#construction-accordion">
-                    <div class="card-body">
-                     The professional monitoring center has a fine tuned process for monitoring that is built on experience of monitoring large number of units for many years.  The Operators get specially trained to respond to intrusion alarm system.  These are quite impossible to replicate if you are monitoring couple of your facilities in-house. 
-                    </div>
-                  </div>
-                </div>
-              
-              </div>
-              <!--/ Accordion end -->
-            </div>
+           
           </div>
+          <?php } ?>
           <!--2nd row end -->
 
           <div class="gap-40"></div>
