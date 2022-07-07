@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
 ================================================== -->
   <meta charset="utf-8">
-  <title>PP Consultancy - Construction Html5 Template</title>
+  <title>PP Consultancy</title>
 
   <!-- Mobile Specific Metas
 ================================================== -->
@@ -82,12 +82,12 @@
         <div class="row">
           <div class="col-lg-12">
               <div class="banner-heading">
-                <h1 class="banner-title" style="color:#ffb600;">Testimonials</h1>
+                <h1 class="banner-title" style="color:#ffb600;">EMI Calculator</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
                       <li class="breadcrumb-item"><a href="#">Home</a></li>
                       <li class="breadcrumb-item"><a href="#">company</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Testimonials</li>
+                      <li class="breadcrumb-item active" aria-current="page">EMI Calculator</li>
                     </ol>
                 </nav>
               </div>

@@ -8,7 +8,7 @@ include('include/config.php');
   <!-- Basic Page Needs
 ================================================== -->
   <meta charset="utf-8">
-  <title>PP Consultancy - Construction Html5 Template</title>
+  <title>PP Consultancy</title>
 
   <!-- Mobile Specific Metas
 ================================================== -->
