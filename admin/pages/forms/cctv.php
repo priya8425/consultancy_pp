@@ -966,14 +966,14 @@ if(isset($_POST["submit"])){
                         $count=1;
                         while($arr=mysqli_fetch_array($sql)){
                         ?>
-                      <tr>
+                      <tr class="" style="">
                         <td><?php echo $count;?></td>
                         <td><?php echo $arr['name'];?></td>
                         <td><?php echo $arr['content'];?></td>
                         <td><img src="../../dist/img/credit/<?php echo $arr['image'];?>"
                             style="height:150px; width:150px;"></td>
                             <td><?php echo $arr['description_name'];?></td>
-                        <td><?php echo $arr['description'];?></td>
+                        <td ><?php echo $arr['description'];?></td>
                         <td> 
                         <a href="#"><button type="button"
                               class="btn btn-danger btn-md" style="color: aliceblue"> <i
