@@ -647,44 +647,68 @@ include('include/config.php');
         <div class="col-lg-6 mt-5 mt-lg-0">
 
           <h3 class="column-title">Happy Clients</h3>
-
+         
           <div class="row all-clients">
+          <?php
+            $sql=mysqli_query($conn,"Select * from  partner where page_name= 'partner1'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
               <div class="col-sm-4 col-6">
                 <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client1.png" alt="clients-logo" /></a>
+                    <a href="#!"><img loading="lazy" class="img-fluid" src="admin/dist/img/credit/<?php echo $arr['icon'];?>" alt="clients-logo" /></a>
                 </figure>
               </div><!-- Client 1 end -->
-
+              <?php } ?>
+              <?php
+            $sql=mysqli_query($conn,"Select * from  partner where page_name= 'partner2'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
               <div class="col-sm-4 col-6">
                 <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client2.png" alt="clients-logo" /></a>
+                    <a href="#!"><img loading="lazy" class="img-fluid" src="admin/dist/img/credit/<?php echo $arr['icon'];?>" alt="clients-logo" /></a>
                 </figure>
               </div><!-- Client 2 end -->
-
+              <?php } ?>
+              <?php
+            $sql=mysqli_query($conn,"Select * from  partner where page_name= 'partner3'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
               <div class="col-sm-4 col-6">
                 <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client3.png" alt="clients-logo" /></a>
+                    <a href="#!"><img loading="lazy" class="img-fluid" src="admin/dist/img/credit/<?php echo $arr['icon'];?>" alt="clients-logo" /></a>
                 </figure>
               </div><!-- Client 3 end -->
-
+              <?php } ?>
+              <?php
+            $sql=mysqli_query($conn,"Select * from  partner where page_name= 'partner4'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
               <div class="col-sm-4 col-6">
                 <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client4.png" alt="clients-logo" /></a>
+                    <a href="#!"><img loading="lazy" class="img-fluid" src="admin/dist/img/credit/<?php echo $arr['icon'];?>" alt="clients-logo" /></a>
                 </figure>
               </div><!-- Client 4 end -->
-
+              <?php } ?>
+              <?php
+            $sql=mysqli_query($conn,"Select * from  partner where page_name= 'partner5'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
               <div class="col-sm-4 col-6">
                 <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client5.png" alt="clients-logo" /></a>
+                    <a href="#!"><img loading="lazy" class="img-fluid" src="admin/dist/img/credit/<?php echo $arr['icon'];?>" alt="clients-logo" /></a>
                 </figure>
               </div><!-- Client 5 end -->
-
+              <?php } ?>
+              <?php
+            $sql=mysqli_query($conn,"Select * from  partner where page_name= 'partner6'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
               <div class="col-sm-4 col-6">
                 <figure class="clients-logo">
-                    <a href="#!"><img loading="lazy" class="img-fluid" src="images/clients/client6.png" alt="clients-logo" /></a>
+                    <a href="#!"><img loading="lazy" class="img-fluid" src="admin/dist/img/credit/<?php echo $arr['icon'];?>" alt="clients-logo" /></a>
                 </figure>
               </div><!-- Client 6 end -->
-
+              <?php } ?>
           </div><!-- Clients row end -->
 
         </div><!-- Col end -->
