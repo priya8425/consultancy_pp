@@ -684,7 +684,7 @@
         <div class="col-md-4">
           <div class="subscribe-call-to-acton">
               <h3>Can We Help?</h3>
-              <h4>(+91) 959-461-7333</h4>
+              <h4>(+91) 9594617333</h4>
           
           </div>
         </div><!-- Col end -->
@@ -698,9 +698,12 @@
 
               <div class="col-md-7 newsletter-form">
                 <form action="#" method="post">
-                    <div class="form-group">
+                    <div class="form-group ">
                       <label for="newsletter-email" class="content-hidden">Newsletter Email</label>
                       <input type="email" name="email" id="newsletter-email" class="form-control form-control-lg" placeholder="Your your email and hit enter" autocomplete="off">
+                    </div>
+                    <div>
+                    <button class="btn btn-primary solid blank checkValidationBtn" type="submit" id="button_submit" >Send Message</button>
                     </div>
                 </form>
               </div>
