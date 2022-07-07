@@ -22,7 +22,7 @@
 
                 </li>
                 <li class="nav-item dropdown active">
-                  <a href="properties.php" class="nav-link dropdown-toggle">Properties</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Properties</a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="residential.php">Residential</a></li>
                     <li><a href="commercial.php">Commercial</a></li>

@@ -19,7 +19,7 @@ include('include/config.php');
 
   <!-- Favicon
 ================================================== -->
-  <link rel="icon" type="image/webp" href="images/pp.webp">
+  <link rel="icon" type="image/webp" style="border: radius 50%;" href="images/pp.webp">
 
   <!-- CSS
 ================================================== -->
