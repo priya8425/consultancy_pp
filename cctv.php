@@ -130,7 +130,7 @@ include('include/config.php');
 
       <div class="col-xl-8 col-lg-8">
       <?php
-            $sql=mysqli_query($conn,"Select * from  services where page_name= 'cctv'");
+            $sql=mysqli_query($conn,"Select * from  services where page_name= 'iso-certificate'");
                while($arr=mysqli_fetch_array($sql)){
              ?>
         <div class="content-inner-page">
@@ -159,7 +159,7 @@ include('include/config.php');
           <div class="row">
             <div class="col-md-6">
               <h3><?php echo $arr['description_name']?></h3>
-            <p><?php echo $arr['content']?></p>
+            <p><?php echo $arr['description']?></p>
 
             </div>
 
@@ -193,7 +193,7 @@ include('include/config.php');
   </div><!-- Conatiner end -->
 </section><!-- Main container end -->
 
-<?php include("include/header.php");?>
+<?php include("include/footer.php");?>
 <!-- Footer end -->
 
 <!-- Footer end -->
