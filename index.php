@@ -1,3 +1,6 @@
+<?php 
+include('include/config.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -565,60 +568,74 @@
 
 <section class="content">
   <div class="container">
+ 
     <div class="row">
         <div class="col-lg-6">
           <h3 class="column-title">Testimonials</h3>
 
           <div id="testimonial-slide" class="testimonial-slide">
+          <?php
+            $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
               <div class="item">
                 <div class="quote-item">
                     <span class="quote-text">
-                     I’m updating some of my marketing materials and am in the process of collecting testimonials from clients and wanted to ask you for one.
+                    <?php echo $arr['description']?>
                     </span>
 
                     <div class="quote-item-footer">
-                      <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial1.png" alt="testimonial">
+                      <img loading="lazy" class="testimonial-thumb" src="admin/dist/img/credit/<?php echo $arr['image'];?>" alt="testimonial">
                       <div class="quote-item-info">
-                          <h3 class="quote-author">Denis</h3>
-                          <span class="quote-subtext">.</span>
+                          <h3 class="quote-author"><?php echo $arr['name']?></h3>
+                          <span class="quote-subtext"><?php echo $arr['about']?></span>
                       </div>
                     </div>
                 </div><!-- Quote item end -->
               </div>
+              <?php } ?>
               <!--/ Item 1 end -->
-
+              <?php
+            $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor2'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
               <div class="item">
                 <div class="quote-item">
                     <span class="quote-text">
-                      our company generate 5 times more leads for less than we were spending before. He’s reliable, professional and a real pleasure to work with.”
+                    <?php echo $arr['description']?>
                     </span>
 
                     <div class="quote-item-footer">
-                      <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial2.png" alt="testimonial">
+                    <img loading="lazy" class="testimonial-thumb" src="admin/dist/img/credit/<?php echo $arr['image'];?>" alt="testimonial">
                       <div class="quote-item-info">
-                          <h3 class="quote-author">Weldon</h3>
-                          <span class="quote-subtext">First Choice</span>
+                          <h3 class="quote-author"><?php echo $arr['name']?></h3>
+                          <span class="quote-subtext"><?php echo $arr['about']?></span>
                       </div>
                     </div>
                 </div><!-- Quote item end -->
               </div>
+              <?php } ?>
               <!--/ Item 2 end -->
-
-              <div class="item">
+              <?php
+            $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor3'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
+             <div class="item">
                 <div class="quote-item">
                     <span class="quote-text">
-                      Would something like this be okay to use? Feel free to edit that and put it in your own words. Really, whatever works for you.
+                    <?php echo $arr['description']?>
                     </span>
 
                     <div class="quote-item-footer">
-                      <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial3.png" alt="testimonial">
+                    <img loading="lazy" class="testimonial-thumb" src="admin/dist/img/credit/<?php echo $arr['image'];?>" alt="testimonial">
                       <div class="quote-item-info">
-                          <h3 class="quote-author">Minter Puchan</h3>
-                          <span class="quote-subtext">.</span>
+                          <h3 class="quote-author"><?php echo $arr['name']?></h3>
+                          <span class="quote-subtext"><?php echo $arr['about']?></span>
                       </div>
                     </div>
                 </div><!-- Quote item end -->
               </div>
+              <?php } ?>
               <!--/ Item 3 end -->
 
               
