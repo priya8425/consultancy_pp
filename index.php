@@ -155,7 +155,7 @@
                     residential property.Home loans can be availed from both banks and Non Banking Financial Companies
                     (NBFCs).</p>
                   <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i
-                      class="fa fa-caret-right"></i> Read More</a>
+                      class="fa fa-caret-right"></i> Learn more</a>
                 </div>
               </div>
             </div><!-- Service1 end -->
@@ -177,7 +177,7 @@
                     & construction of the individuals and companies involved in the planning, creation, & designing of
                     our infrastructure.</p>
                   <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i
-                      class="fa fa-caret-right"></i> Read More</a>
+                      class="fa fa-caret-right"></i> Learn more</a>
                 </div>
               </div>
             </div><!-- Service2 end -->
@@ -198,7 +198,7 @@
                   <p> health check package which helps in the overall assessment of all the organs and systems of the
                     body such as Heart, Liver, Kidneys, Thyroid, Urinary track infections, Diabetes, etc....</p>
                   <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i
-                      class="fa fa-caret-right"></i> Read More</a>
+                      class="fa fa-caret-right"></i> Learn more</a>
                 </div>
               </div>
             </div><!-- Service3 end -->
@@ -668,14 +668,14 @@
     </section>
     <!-- Content end -->
 
-    <section class="content" >
+    <section class="content">
       <div class="container">
         <div class="row">
           <!-- Col end -->
 
           <div class="col-lg-12 mt-5 mt-lg-0">
 
-            <h3 class="column-title" style="text-align:center;">Happy Clients</h3>
+            <h3 class="column-title" style="text-align:center">Happy Clients</h3>
 
             <div class="row all-clients">
               <div class="col-sm-4 col-6">

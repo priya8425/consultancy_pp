@@ -2,9 +2,8 @@
 include("../../../include/config.php");
 if(isset($_POST["submit"])){
 
+    $about=$_POST['about'];
     $name=$_POST['name'];
-    $content=$_POST['content'];
-    $description_name=$_POST['description_name'];
     $description=$_POST['description'];
     $image=$_FILES['image']['name'];   
     $filedet=$_FILES['image']['tmp_name'];
@@ -12,7 +11,7 @@ if(isset($_POST["submit"])){
     move_uploaded_file($filedet,$loc);
    
     
-    $sql = "UPDATE services SET name = '$name', content = '$content', description_name = '$description_name', description = '$description', image = '$image' WHERE page_name = 'cctv';";
+    $sql = "UPDATE  testimonials SET about = '$about', name = '$name', description = '$description', image = '$image' WHERE page_name = 'instructor';";
     $result=mysqli_query($conn, $sql);
     
     }
@@ -862,7 +861,7 @@ if(isset($_POST["submit"])){
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Cctv</h1>
+            <h1>Testimonials</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -889,13 +888,10 @@ if(isset($_POST["submit"])){
               <!-- form start -->
               <form method="POST" enctype="multipart/form-data">
                 <div class="card-body">
+                  
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" name="name" id="exampleInputEmail1" placeholder="Enter email">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Content</label>
-                    <textarea type="text" class="form-control" name="content" id="example2" placeholder="Enter Description"></textarea>
+                    <label for="exampleInputPassword1">Description</label>
+                    <textarea type="text" class="form-control" name="description" id="example2" placeholder="Enter Description"></textarea>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputFile">Image</label>
@@ -911,11 +907,11 @@ if(isset($_POST["submit"])){
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" name="description_name" id="example2" placeholder="Enter Description">
+                    <input type="text" class="form-control" name="name" id="example2" placeholder="Enter Description">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Description</label>
-                    <textarea type="text" class="form-control" name="description" id="example2" placeholder="Enter Description"></textarea>
+                    <label for="exampleInputEmail1">about</label>
+                    <input type="text" class="form-control" name="about" id="example2" placeholder="Enter Description">
                   </div>
                 </div>
                 <!-- /.card-body -->
@@ -952,29 +948,28 @@ if(isset($_POST["submit"])){
                 <thead>
                       <tr>
                         <th>Sr.No</th>
-                        <th>Name</th>
-                        <th>Content</th>
-                        <th>Image</th>
-                        <th>D-name</th>
                         <th>Description</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>About</th>
                         <th>Action</th>
                       </tr>
                     </thead>
                   <tbody>
                       <?php     
-                        $sql=mysqli_query($conn,"select * from services");
+                        $sql=mysqli_query($conn,"select * from  testimonials");
                         $count=1;
                         while($arr=mysqli_fetch_array($sql)){
                         ?>
-                      <tr class="" style="">
+                      <tr>
                         <td><?php echo $count;?></td>
-                        <td><?php echo $arr['name'];?></td>
-                        <td><?php echo $arr['content'];?></td>
+                        <td ><?php echo $arr['description'];?></td>
                         <td><img src="../../dist/img/credit/<?php echo $arr['image'];?>"
                             style="height:150px; width:150px;"></td>
-                            <td><?php echo $arr['description_name'];?></td>
-                        <td ><?php echo $arr['description'];?></td>
-                        <td> 
+                            <td><?php echo $arr['name'];?></td>
+                            <td><?php echo $arr['about'];?></td>
+                            <td>
+                       
                         <a href="#"><button type="button"
                               class="btn btn-danger btn-md" style="color: aliceblue"> <i
                                 class="fas fa-pen"></i></button></a>
@@ -982,6 +977,7 @@ if(isset($_POST["submit"])){
                                 <a href="#"><button type="button"
                               class="btn btn-danger btn-md" style="color: aliceblue"> <i
                                 class="fas fa-trash"></i></button></a>
+                                </td>
                       </tr>
                       <?php $count++; }  ?>
                     </tbody>
