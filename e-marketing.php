@@ -20,7 +20,7 @@ include('include/config.php');
 
   <!-- Favicon
 ================================================== -->
-  <link rel="icon" type="image/png" href="images/pp.jpg">
+  <link rel="icon" type="image/webp" href="images/pp.webp">
 
   <!-- CSS
 ================================================== -->
@@ -87,7 +87,7 @@ include('include/config.php');
     <!-- Header start -->
     <?php include("include/header.php");?>
     <!--/ Header end -->
-    <div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner1.jpg)">
+    <div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner1.webp)">
       <div class="banner-text">
         <div class="container">
           <div class="row">
