@@ -65,7 +65,7 @@ else {
 
   <!-- Favicon
 ================================================== -->
-  <link rel="icon" type="image/png" href="images/pp.jpg">
+  <link rel="icon" type="image/webp" href="images/pp.webp">
 
   <!-- CSS
 ================================================== -->
@@ -134,7 +134,7 @@ else {
 <!-- Header start -->
 <?php include("include/header.php");?>
 <!--/ Header end -->
-<div id="banner-area" class="banner-area" style="background-image:url(images/banner/contactus.jpg)">
+<div id="banner-area" class="banner-area" style="background-image:url(images/banner/contactus.webp)">
   <div class="banner-text">
     <div class="container">
         <div class="row">
@@ -217,7 +217,7 @@ else {
 
     <div class="google-map">
       <iframe id="map" class="map"style="width:100%;" data-marker-name="PP Consultancy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.127548140075!2d73.10040851421175!3d19.014100458857854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e83322251e19%3A0xd4f13e10f505bcb9!2sHaware%20Nirmiti!5e0!3m2!1sen!2sin!4v1648213072284!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <!-- <div id="map" class="map" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/marker.png" data-marker-name="PP Consultancy"></div> -->
+      <!-- <div id="map" class="map" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/marker.webp" data-marker-name="PP Consultancy"></div> -->
     </div>
 
     <div class="gap-40"></div>

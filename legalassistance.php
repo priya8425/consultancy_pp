@@ -15,7 +15,7 @@
 
   <!-- Favicon
 ================================================== -->
-  <link rel="icon" type="image/png" href="images/pp.jpg">
+  <link rel="icon" type="image/webp" href="images/pp.webp">
 
   <!-- CSS
 ================================================== -->
@@ -76,7 +76,7 @@
 <!-- Header start -->
 <?php include("include/header.php");?>
 <!--/ Header end -->
-<div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner1.jpg)">
+<div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner1.webp)">
   <div class="banner-text">
     <div class="container">
         <div class="row">
@@ -114,7 +114,7 @@
                </div>
 
                <div class="quote-item-footer">
-                  <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial1.png" alt="testimonial">
+                  <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial1.webp" alt="testimonial">
                   <div class="quote-item-info">
                      <h3 class="quote-author"> Denis john</h3>
                      <span class="quote-subtext">Industries</span>
@@ -130,7 +130,7 @@
                </div>
 
                <div class="quote-item-footer">
-                  <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial2.png" alt="testimonial">
+                  <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial2.webp" alt="testimonial">
                   <div class="quote-item-info">
                      <h3 class="quote-author">Weldon gnis</h3>
                      <span class="quote-subtext">.</span>
@@ -146,7 +146,7 @@
                </div>
 
                <div class="quote-item-footer">
-                  <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial3.png" alt="testimonial">
+                  <img loading="lazy" class="testimonial-thumb" src="images/clients/testimonial3.webp" alt="testimonial">
                   <div class="quote-item-info">
                      <h3 class="quote-author">Kirens Izzy</h3>
                      <span class="quote-subtext"> AKT Group</span>

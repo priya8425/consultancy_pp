@@ -16,7 +16,7 @@
 
   <!-- Favicon
 ================================================== -->
-  <link rel="icon" type="image/png" href="images/pp.jpg">
+  <link rel="icon" type="image/webp" href="images/pp.webp">
 
   <!-- CSS
 ================================================== -->
@@ -80,7 +80,7 @@
     <!-- Header start -->
     <?php include("include/header.php");?>
     <!--/ Header end -->
-    <div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner1.jpg)">
+    <div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner1.webp)">
       <div class="banner-text">
         <div class="container">
           <div class="row">
@@ -108,7 +108,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="ts-service-box">
               <div class="ts-service-image-wrapper" style="text-align:center">
-                <img loading="lazy" class="w-50" src="images/icon-image/loan.png" alt="service-image"
+                <img loading="lazy" class="w-50" src="images/icon-image/loan.webp" alt="service-image"
                   style="height:150px ">
 
               </div>
@@ -130,7 +130,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="ts-service-box">
               <div class="ts-service-image-wrapper" style="text-align:center">
-                <img loading="lazy" class="w-50" src="images/icon-image/architect.png" alt="service-image"
+                <img loading="lazy" class="w-50" src="images/icon-image/architect.webp" alt="service-image"
                   style="height:150px ">
               </div>
               <div class="d-flex">
@@ -151,7 +151,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="ts-service-box">
               <div class="ts-service-image-wrapper" style="text-align:center">
-                <img loading="lazy" class="w-50" src="images/icon-image/healthcare.png" alt="service-image"
+                <img loading="lazy" class="w-50" src="images/icon-image/healthcare.webp" alt="service-image"
                   style="height:150px ">
               </div>
               <div class="d-flex">
@@ -171,7 +171,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="ts-service-box">
               <div class="ts-service-image-wrapper" style="text-align:center">
-                <img loading="lazy" class="w-50" src="images/icon-image/vendor.png" alt="service-image"
+                <img loading="lazy" class="w-50" src="images/icon-image/vendor.webp" alt="service-image"
                   style="height:150px ">
               </div>
               <div class="d-flex">
@@ -190,7 +190,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="ts-service-box">
               <div class="ts-service-image-wrapper" style="text-align:center">
-                <img loading="lazy" class="w-50" src="images/icon-image/realestate.png" alt="service-image"
+                <img loading="lazy" class="w-50" src="images/icon-image/realestate.webp" alt="service-image"
                   style="height:150px ">
               </div>
               <div class="d-flex">
@@ -210,7 +210,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="ts-service-box">
               <div class="ts-service-image-wrapper" style="text-align:center">
-                <img loading="lazy" class="w-50" src="images/icon-image/engineer.png" alt="service-image"
+                <img loading="lazy" class="w-50" src="images/icon-image/engineer.webp" alt="service-image"
                   style="height:150px ">
               </div>
               <div class="d-flex">
@@ -229,7 +229,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="ts-service-box">
               <div class="ts-service-image-wrapper" style="text-align:center">
-                <img loading="lazy" class="w-50" src="images/icon-image/registration.png" alt="service-image"
+                <img loading="lazy" class="w-50" src="images/icon-image/registration.webp" alt="service-image"
                   style="height:150px ">
               </div>
               <div class="d-flex">
@@ -248,7 +248,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="ts-service-box">
               <div class="ts-service-image-wrapper" style="text-align:center">
-                <img loading="lazy" class="w-50" src="images/icon-image/certificate.png" alt="service-image"
+                <img loading="lazy" class="w-50" src="images/icon-image/certificate.webp" alt="service-image"
                   style="height:150px ">
               </div>
               <div class="d-flex">
@@ -268,7 +268,7 @@
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="ts-service-box">
               <div class="ts-service-image-wrapper" style="text-align:center">
-                <img loading="lazy" class="w-50" src="images/icon-image/cctv.png" alt="service-image"
+                <img loading="lazy" class="w-50" src="images/icon-image/cctv.webp" alt="service-image"
                   style="height:150px ">
               </div>
               <div class="d-flex">
