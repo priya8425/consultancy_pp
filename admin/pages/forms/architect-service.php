@@ -1,6 +1,7 @@
 <?php
 include("../../../include/config.php");
-if(isset($_POST["submit"])){
+if(isset($_POST["submit"]))
+  {
 
     $name=$_POST['name'];
     $content=$_POST['content'];
@@ -14,7 +15,20 @@ if(isset($_POST["submit"])){
     $sql = "UPDATE services SET name = '$name', content = '$content', description = '$description', image = '$image' WHERE page_name = 'architect-service';";
     $result=mysqli_query($conn, $sql);
     
+  }
+
+if(isset($_GET['delid']))
+  {
+    $id=mysqli_real_escape_string($conn,$_GET['delid']);
+    $sql=mysqli_query($conn,"delete from services where id='$id'");
+    if($sql=1){
+      header("location:architect-service.php");
     }
+  }
+  
+
+
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -971,11 +985,11 @@ if(isset($_POST["submit"])){
                             style="height:150px; width:150px;"></td>
                         <td><?php echo $arr['description'];?></td>
                         <td>
-                          <a href="#"><button type="button" class="btn btn-primary btn-md" data-bs-toggle="modal"
+                          <a href="#"><button type="button" class="btn btn-primary btn-md " data-bs-toggle="modal"
                               data-bs-target="#myModal" style="color: aliceblue"> <i
                                 class="fas fa-pen"></i></button></a>
 
-                          <a href="#"><button type="button" class="btn btn-danger btn-md" style="color: aliceblue"> <i
+                          <a href="architect-service.php?delid=<?php echo $arr['id']; ?>"><button type="button" class="btn btn-danger btn-md btn-xs delete_expense_category_modal" style="color: aliceblue"> <i
                                 class="fas fa-trash"></i></button></a>
                       </tr>
                       <?php $count++; }  ?>
