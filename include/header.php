@@ -33,19 +33,17 @@
                       class="fa fa-angle-down"></i></a>
 
                   <ul class="dropdown-menu" role="menu">
-
-                    <li><a href="home-loan-assistance.php">Home Loan Assistance</a></li>
-                    <li><a href="legalassistance.php">Legal Assistance</a></li>
-                    <li><a href="property-valuation.php">Property Valuation</a></li>
                     <li><a href="emicalculator.php">Emi Calculator</a></li>
+                    <li><a href="legalassistance.php">Legal Assistance</a></li>
+                    <li><a href="home-loan-assistance.php">Home Loan Assistance</a></li>
+                    <li><a href="property-valuation.php">Property Valuation</a></li>
                     <li><a href="documentation-registration.php">Documentation Registration</a></li>
 
                   </ul>
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a href="services.php" class="nav-link dropdown-toggle" >Services <i
-                      class="fa fa-angle-down"></i></a>
+                  <a href="services.php" class="nav-link dropdown-toggle">Services <i class="fa fa-angle-down"></i></a>
                   <ul class="dropdown-menu" role="menu">
 
                     <li><a href="e-marketing.php">Government eMarketplace Vendor</a></li>

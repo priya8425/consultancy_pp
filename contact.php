@@ -1,4 +1,5 @@
 <?php
+include("include/config.php");
 
 $name= $_POST['name'];
 $mobile = $_POST['mobile'];
@@ -6,8 +7,8 @@ $email= $_POST['email'];
 $message= $_POST['message'];
 
 // configure
-$from = 'PP Consultancy Website<pravin.pawar@ppconser.com>';
-$sendTo = 'PP Consultancy <pravin.pawar@ppconser.com>';
+$from = 'PP Consultancy Website<maheshniwate10@gmail.com>';
+$sendTo = 'PP Consultancy <maheshniwate10@gmail.com>';
 $mobile = 'PP Consultancy Form';
 $fields = array('name' => 'name', 'mobile' => 'mobile',  'email' => 'email', 'message' => 'message'); // array variable name => Text to appear in email
 $okMessage = '';

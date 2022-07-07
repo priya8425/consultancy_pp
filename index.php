@@ -609,7 +609,7 @@ include('include/config.php');
                   <?php echo $arr['description']?>
                 </span>
 
-                <div class="quote-item-footer">
+                <div class="quote-item-footer" style="margin-left:25%">
                   <img loading="lazy" class="testimonial-thumb" src="admin/dist/img/credit/<?php echo $arr['image'];?>"
                     alt="testimonial">
                   <div class="quote-item-info">
@@ -631,7 +631,7 @@ include('include/config.php');
                   <?php echo $arr['description']?>
                 </span>
 
-                <div class="quote-item-footer">
+                <div class="quote-item-footer" style="margin-left:25%">
                   <img loading="lazy" class="testimonial-thumb" src="admin/dist/img/credit/<?php echo $arr['image'];?>"
                     alt="testimonial">
                   <div class="quote-item-info">
@@ -653,7 +653,7 @@ include('include/config.php');
                   <?php echo $arr['description']?>
                 </span>
 
-                <div class="quote-item-footer">
+                <div class="quote-item-footer" style="margin-left:25%">
                   <img loading="lazy" class="testimonial-thumb" src="admin/dist/img/credit/<?php echo $arr['image'];?>"
                     alt="testimonial">
                   <div class="quote-item-info">
