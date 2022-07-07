@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <!-- Basic Page Needs
-================================================== -->
-  <meta charset="utf-8">
-  <title>PP Consultancy </title>
-
-  <!-- mobile Specific Metas
-================================================== -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Construction Html5 Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-
-  <!-- Favicon
-================================================== -->
-  <link rel="icon" type="image/png" href="images/pp.jpg">
-
-  <!-- CSS
-================================================== -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
-  <!-- Animation -->
-  <link rel="stylesheet" href="plugins/animate-css/animate.css">
-  <!-- slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
-  <!-- Colorbox -->
-  <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
-  <!-- Template styles-->
-  <link rel="stylesheet" href="css/style.css">
- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-	
-	<?php
+<?php
 
 $name= $_POST['name'];
 $mobile = $_POST['mobile'];
@@ -46,7 +9,7 @@ $message= $_POST['message'];
 $from = 'PP Consultancy Website<pravin.pawar@ppconser.com>';
 $sendTo = 'PP Consultancy <pravin.pawar@ppconser.com>';
 $mobile = 'PP Consultancy Form';
-$fields = array('name' => 'name', 'mobile' => 'mobile', 'message' => 'message', 'email' => 'email'); // array variable name => Text to appear in email
+$fields = array('name' => 'name', 'mobile' => 'mobile',  'email' => 'email', 'message' => 'message'); // array variable name => Text to appear in email
 $okMessage = '';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
@@ -84,6 +47,44 @@ else {
 }
 ?>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <title>PP Consultancy </title>
+
+  <!-- mobile Specific Metas
+================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Construction Html5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+  <!-- Favicon
+================================================== -->
+  <link rel="icon" type="image/png" href="images/pp.jpg">
+
+  <!-- CSS
+================================================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+  <!-- Animation -->
+  <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <!-- slick Carousel -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <!-- Colorbox -->
+  <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
+  <!-- Template styles-->
+  <link rel="stylesheet" href="css/style.css">
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	
 
 
 
