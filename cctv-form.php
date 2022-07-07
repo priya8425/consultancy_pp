@@ -4,11 +4,14 @@ if(isset($_POST["submit"])){
 
     $name=$_POST['name'];
     $content=$_POST['content'];
-    $image=$_POST['image'];
     $description=$_POST['description'];
+    $image=$_FILES['image']['name'];   
+    $filedet=$_FILES['image']['tmp_name'];
+    $loc="images/dist/".$image;
+    move_uploaded_file($filedet,$loc);
    
     
-    $sql = "UPDATE services SET name = '$name', content = '$content', image = '$image', description = '$description' WHERE page_name = 'cctv'";
+    $sql = "UPDATE services SET name = '$name', content = '$content', description = '$description', file = '$image' WHERE page_name = 'cctv'";
     $result=mysqli_query($conn, $sql);
     
     }
@@ -89,7 +92,7 @@ if(isset($_POST["submit"])){
     </div>
     <!--/ Topbar end -->
 <!-- Header start -->
-<?php include("include/header.php");?>
+
 <!--/ Header end -->
 <!-- Banner area end --> 
 
@@ -104,7 +107,7 @@ if(isset($_POST["submit"])){
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form method="POST">
+              <form method="POST" enctype="multipart/form-data">
                 <div class="card-body">
                 <div class="row">
           <div class="col-md-6">
@@ -188,13 +191,13 @@ if(isset($_POST["submit"])){
                         <td><?php echo $count;?></td>
                         <td><?php echo $arr['name'];?></td>
                         <td><?php echo $arr['content'];?></td>
-                        <td><img src="../imges/dist/<?php echo $arr['image'];?>"
+                        <td><img src="../images/dist/<?php echo $arr['image'];?>"
                             style="height:150px; width:150px;"></td>
                         <td><?php echo $arr['description'];?></td>
                         <td> 
                         <a href="#"><button type="button"
                               class="btn btn-danger btn-md" style="color: aliceblue"> <i
-                                class="fas fa-trash"></i></button></a>
+                                class="fas fa-pen"></i></button></a>
 
                                 <a href="#"><button type="button"
                               class="btn btn-danger btn-md" style="color: aliceblue"> <i
