@@ -1,15 +1,16 @@
 	<?php
+include("include/config.php");
 
 $name= $_POST['name'];
-$subject = $_POST['subject'];
+$mobile = $_POST['mobile'];
 $email= $_POST['email'];
 $message= $_POST['message'];
 
 // configure
-$from = 'Enquiry <info@sachinenterprise.in>';
-$sendTo = 'Enquiry <maheshniwate10@gmail.com>';
+$from = 'Enquiry <maheshniwate10@gmail.in>';
+$sendTo = 'Enquiry <yadavpriya1425@gmail.com>';
 $subject = 'Career Form from Website';
-$fields = array('name' => 'name', 'subject' => 'subject', 'message' => 'message', 'email' => 'email'); // array variable name => Text to appear in email
+$fields = array('name' => 'name', 'mobile' => 'mobile', 'message' => 'message', 'email' => 'email'); // array variable name => Text to appear in email
 $okMessage = 'thank you! We will respond to you as early as possible. For Quick Confirmation, Call us on 7264889986 and take instant appointment on Call.';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
@@ -137,7 +138,7 @@ else {
 
         window.setTimeout(function() {
 
-            location.href = "index.php";
+            location.href = "contact.php";
 
         }, 5000);
 
