@@ -113,13 +113,13 @@ include('include/config.php');
               <li><a href="real-estate.php">Real Estate</a></li>
               <li ><a href="home-loan.php">Home Loan</a></li>
               <li ><a href="registration.php">Registration</a></li>
-              <li><a href="architect-service.php">Architect Services- Drawing & Planning</a></li>
+              <li class="active"><a href="architect-service.php">Architect Services- Drawing & Planning</a></li>
               <li ><a href="civil-constructor.php">Civil Constructor</a></li>
               <li><a href="iso-certificate.php">ISO Certification</a></li>
               <li><a href="medical-checkup.php">Medical Health Checkup</a></li>
-              <li  class="active"><a href="cctv.php">CCTV Installation</a></li>
+              <li  ><a href="cctv.php">CCTV Installation</a></li>
               <li><a href="web-development.php">Web Development</a></li>
-              <li><a href="loan-service.php">Loan Services</a></li>
+              
             </ul>
           </div><!-- Widget end -->
 

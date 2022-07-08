@@ -127,7 +127,7 @@ include('include/config.php');
               <li><a href="medical-checkup.php">Medical Health Checkup</a></li>
               <li><a href="cctv.php">CCTV Installation</a></li>
               <li><a href="web-development.php">Web Development</a></li>
-              <li><a href="loan-service.php">Loan Services</a></li>
+              
             </ul>
           </div><!-- Widget end -->
 
