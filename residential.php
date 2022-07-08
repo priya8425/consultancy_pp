@@ -95,15 +95,6 @@ include('include/config.php');
 
 
 
-
-
-
-
-
-
-
-
-
   <style>
     .btn-white {
       background: #fbffca;
