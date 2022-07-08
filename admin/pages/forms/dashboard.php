@@ -2,8 +2,9 @@
 include("../../../include/config.php");
 if(isset($_POST["submit"])){
 
-    $about=$_POST['about'];
     $name=$_POST['name'];
+    $content=$_POST['content'];
+    $description_name=$_POST['description_name'];
     $description=$_POST['description'];
     $image=$_FILES['image']['name'];   
     $filedet=$_FILES['image']['tmp_name'];
@@ -11,7 +12,7 @@ if(isset($_POST["submit"])){
     move_uploaded_file($filedet,$loc);
    
     
-    $sql = "UPDATE  testimonials SET about = '$about', name = '$name', description = '$description', image = '$image' WHERE page_name = 'instructor';";
+    $sql = "UPDATE services SET name = '$name', content = '$content', description_name = '$description_name', description = '$description', image = '$image' WHERE page_name = 'cctv';";
     $result=mysqli_query($conn, $sql);
     
     }
@@ -192,141 +193,101 @@ if(isset($_POST["submit"])){
     <!-- /.sidebar -->
   </aside>
 
-  <!-- Content Wrapper. Contains page content -->
+ 
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Testimonials</h1>
-          </div>
+            <h1 class="m-0">Dashboard</h1>
+          </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">General Form</li>
+              <li class="breadcrumb-item active">Dashboard </li>
             </ol>
-          </div>
-        </div>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
       </div><!-- /.container-fluid -->
-    </section>
+    </div>
+    <!-- /.content-header -->
 
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
         <div class="row">
-          <!-- left column -->
-          <div class="col-md-12">
-            <!-- general form elements -->
-            <div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">Quick Example</h3>
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>150</h3>
+
+                <p>Courses</p>
               </div>
-              <!-- /.card-header -->
-              <!-- form start -->
-              <form method="POST" enctype="multipart/form-data">
-                <div class="card-body">
-                  
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Description</label>
-                    <textarea type="text" class="form-control" name="description" id="example2" placeholder="Enter Description"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputFile">Image</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" name="image" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
-                      <div class="input-group-append">
-                        <span class="input-group-text">Upload</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" name="name" id="example2" placeholder="Enter Description">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">about</label>
-                    <input type="text" class="form-control" name="about" id="example2" placeholder="Enter Description">
-                  </div>
-                </div>
-                <!-- /.card-body -->
-
-                <div class="card-footer">
-                  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
-
-              
-
-              <!-- /.card-header -->
-            
+              <div class="icon">
+                <i class="ion ion-bag"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
-           
-
           </div>
-          
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>53<sup style="font-size: 20px"></sup></h3>
+
+                <p>Instructor</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>44</h3>
+
+                <p>Students</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-person-add"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>65</h3>
+
+                <p>Unique Visitors</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
         </div>
         <!-- /.row -->
-      </div>
+       
     </section>
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-          <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">DataTable </h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                      <tr>
-                        <th>Sr.No</th>
-                        <th>Description</th>
-                        <th>Image</th>
-                        <th>Name</th>
-                        <th>About</th>
-                        <th>Action</th>
-                      </tr>
-                    </thead>
-                  <tbody>
-                      <?php     
-                        $sql=mysqli_query($conn,"select * from  testimonials");
-                        $count=1;
-                        while($arr=mysqli_fetch_array($sql)){
-                        ?>
-                      <tr>
-                        <td><?php echo $count;?></td>
-                        <td ><?php echo $arr['description'];?></td>
-                        <td><img src="../../dist/img/credit/<?php echo $arr['image'];?>"
-                            style="height:150px; width:150px;"></td>
-                            <td><?php echo $arr['name'];?></td>
-                            <td><?php echo $arr['about'];?></td>
-                            <td>
-                       
-                        <a href="#"><button type="button"
-                              class="btn btn-danger btn-md" style="color: aliceblue"> <i
-                                class="fas fa-pen"></i></button></a>
-
-                                <a href="#"><button type="button"
-                              class="btn btn-danger btn-md" style="color: aliceblue"> <i
-                                class="fas fa-trash"></i></button></a>
-                                </td>
-                      </tr>
-                      <?php $count++; }  ?>
-                    </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            </section>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
-      
+    <!-- /.content -->
+  </div>
+    
+    
+   
+     
     
   <!-- /.content-wrapper -->
   <footer class="main-footer">

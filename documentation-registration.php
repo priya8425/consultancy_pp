@@ -137,8 +137,7 @@ if(isset($_POST['submit'])){
             <div class="row">
                <div class="col-md-12">
                   <h3 class="column-title">Enquiry Details</h3>
-                  <!-- contact form works with formspree.io  -->
-                  <!-- contact form activation doc: https://docs.themefisher.com/PP Consultancy/contact-form/ -->
+                  
                      <form id="contact-form" action="#" method="post">
                      <div class="error-container"></div>
 
