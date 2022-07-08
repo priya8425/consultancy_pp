@@ -1,54 +1,3 @@
-<?php
-include("include/config.php");
-
-$name= $_POST['name'];
-$mobile = $_POST['mobile'];
-$email= $_POST['email'];
-$message= $_POST['message'];
-
-// configure
-$from = 'PP Consultancy Website<maheshniwate10@gmail.com>';
-$sendTo = 'PP Consultancy <maheshniwate10@gmail.com>';
-$mobile = 'PP Consultancy Form';
-$fields = array('name' => 'name', 'mobile' => 'mobile',  'email' => 'email', 'message' => 'message'); // array variable name => Text to appear in email
-$okMessage = '';
-$errorMessage = 'There was an error while submitting the form. Please try again later';
-
-// let's do the sending
-
-try
-{
-    $emailText = "You have new message from contact form\n=============================\n";
-
-    foreach ($_POST as $key => $value) {
-
-        if (isset($fields[$key])) {
-            $emailText .= "$fields[$key]: $value\n";
-        }
-    }
-
-    mail($sendTo, $mobile, $emailText, "From: " . $from);
-
-    $responseArray = array('type' => 'success', 'message' => $okMessage);
-}
-catch (\Exception $e)
-{
-    $responseArray = array('type' => 'danger', 'message' => $errorMessage);
-}
-
-if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-    $encoded = json_encode($responseArray);
-    
-    header('Content-Type: application/json');
-    
-    echo $encoded;
-}
-else {
-    echo $responseArray['message'];
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -228,7 +177,7 @@ else {
         <h3 class="column-title">We love to hear</h3>
         <!-- contact form works with formspree.io  -->
         <!-- contact form activation doc: https://docs.themefisher.com/PP Consultancy/contact-form/ -->
-        <form id="contact-form" action="contact.php" method="post" role="form">
+        <form id="contact-form" action="contactus.php" method="post" role="form">
           <div class="error-container"></div>
           <div class="row">
             <div class="col-md-4">
