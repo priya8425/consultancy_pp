@@ -116,11 +116,11 @@
                 <div class="ts-service-box-img">
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title" style="text-align:center"><a href="home-loan.html">Home Loan</a></h3>
+                  <h3 class="service-box-title" style="text-align:center"><a href="home-loan.php">Home Loan</a></h3>
                   <p>A home loan is a secured loan takenn from a financial institution for the purpose of buying a
                     residential property.Home loans can be availed from both banks and Non Banking Financial Companies
                     (NBFCs).</p>
-                  <a class="learn-more d-inline-block "  href="home-loan.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block "  href="home-loan.php" aria-label="service-details"><i
                       class="fa fa-caret-right" ></i> Read more</a>
                 </div>
               </div>
@@ -137,11 +137,11 @@
                 <div class="ts-service-box-img">
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title" style="text-align:center"><a href="civil-constructor.html">Civil Contractor</a></h3>
+                  <h3 class="service-box-title" style="text-align:center"><a href="civil-constructor.php">Civil Contractor</a></h3>
                   <p>Civil construction is the creation of infrastructure anything to do with water, earth, or transport
                     & construction of the individuals and companies involved in the planning, creation, & designing of
                     our infrastructure.</p>
-                  <a class="learn-more d-inline-block" href="civil-constructor.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block" href="civil-constructor.php" aria-label="service-details"><i
                       class="fa fa-caret-right"></i> Read More</a>
                 </div>
               </div>
@@ -158,10 +158,10 @@
                 <div class="ts-service-box-img">
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title" style="text-align:center"><a href="medical-checkup.html">Medical Health Check-up</a></h3>
+                  <h3 class="service-box-title" style="text-align:center"><a href="medical-checkup.php">Medical Health Check-up</a></h3>
                   <p> health check package helps in overall assessment of all the organs and systems of the
                     body such as Heart, Liver, Kidneys, Thyroid, Urinary track infections, Diabetes, etc....</p>
-                  <a class="learn-more d-inline-block" href="medical-checkup.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block" href="medical-checkup.php" aria-label="service-details"><i
                       class="fa fa-caret-right"></i> Read More</a>
                 </div>
               </div>
@@ -178,9 +178,9 @@
                 <div class="ts-service-box-img">
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title" style="text-align:center"><a href="e-marketing.html">Government e-Marketplace Vendor</a></h3>
+                  <h3 class="service-box-title" style="text-align:center"><a href="e-marketing.php">Government e-Marketplace Vendor</a></h3>
                   <p>As expert we provides advice and further purposeful activities in an area of specialization.</p>
-                  <a class="learn-more d-inline-block" href="e-marketing.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block" href="e-marketing.php" aria-label="service-details"><i
                       class="fa fa-caret-right"></i> Read More</a>
                 </div>
               </div>
@@ -197,10 +197,10 @@
                 <div class="ts-service-box-img">
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title" style="text-align:center"><a href="real-estate.html">Real E-state</a></h3>
+                  <h3 class="service-box-title" style="text-align:center"><a href="real-estate.php">Real E-state</a></h3>
                   <p>Real estate is property consisting of land and the buildings on it, along with its natural
                     resources such as crops, water etc..</p>
-                  <a class="learn-more d-inline-block" href="real-estate.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block" href="real-estate.php" aria-label="service-details"><i
                       class="fa fa-caret-right"></i> Read More</a>
                 </div>
               </div>
@@ -217,9 +217,9 @@
                 <div class="ts-service-box-img">
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title" style="text-align:center"><a href="architect-service.html">ARCHITECTURAL SERVICES</a></h3>
+                  <h3 class="service-box-title" style="text-align:center"><a href="architect-service.php">ARCHITECTURAL SERVICES</a></h3>
                   <p>Taking Client's instructions and preparation of design brief, Site evaluation, etc..</p>
-                  <a class="learn-more d-inline-block" href="architect-service.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block" href="architect-service.php" aria-label="service-details"><i
                       class="fa fa-caret-right"></i> Read More</a>
                 </div>
               </div>
@@ -236,9 +236,9 @@
                 <div class="ts-service-box-img">
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title" style="text-align:center"><a href="registration.html">Registration</a></h3>
+                  <h3 class="service-box-title" style="text-align:center"><a href="registration.php">Registration</a></h3>
                   <p>Registering documents related to property you purchased, you should pay stamp duty.</p>
-                  <a class="learn-more d-inline-block" href="registration.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block" href="registration.php" aria-label="service-details"><i
                       class="fa fa-caret-right"></i> Read More</a>
                 </div>
               </div>
@@ -255,10 +255,10 @@
                 <div class="ts-service-box-img">
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title" style="text-align:center"><a href="iso-certificate.html">ISO CERTIFICATION</a></h3>
+                  <h3 class="service-box-title" style="text-align:center"><a href="iso-certificate.php">ISO CERTIFICATION</a></h3>
                   <p>ISO certification is a seal of approval from a third party that a company runs to one of the
                     international standards developed and published.</p>
-                  <a class="learn-more d-inline-block" href="iso-certificate.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block" href="iso-certificate.php" aria-label="service-details"><i
                       class="fa fa-caret-right"></i> Read More</a>
                 </div>
               </div>
@@ -275,9 +275,9 @@
                 <div class="ts-service-box-img">
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title" style="text-align:center"><a href="cctv.html">CCTV Installation</a></h3>
+                  <h3 class="service-box-title" style="text-align:center"><a href="cctv.php">CCTV Installation</a></h3>
                   <p>Video Surveillance with local as well as remote access, safer work place, reduce data theft, improve employee productivity, monitor multiple locations and control. etc....</p>
-                  <a class="learn-more d-inline-block" href="cctv.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block" href="cctv.php" aria-label="service-details"><i
                       class="fa fa-caret-right"></i> Read More</a>
                 </div>
               </div>

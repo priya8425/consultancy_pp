@@ -94,7 +94,7 @@ include('include/config.php');
               <p class="box-slide-description">Our end-to-end services support your organization at all stages of the
                 content creation process.</p>
               <p>
-                <a href="services.html" class="slider btn btn-primary">Our Service</a>
+                <a href="services.php" class="slider btn btn-primary">Our Service</a>
               </p>
             </div>
           </div>
@@ -111,7 +111,7 @@ include('include/config.php');
                 <p class="box-slide-description">You have ideas, goals, and dreams. We have a culturally diverse,
                   forward
                   thinking team looking for talent like.</p>
-                <p><a href="about.html" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
+                <p><a href="about.php" class="slider btn btn-primary" aria-label="about-us">Know Us</a></p>
               </div>
             </div>
           </div>
@@ -153,11 +153,11 @@ include('include/config.php');
                   <img loading="lazy" src="images/icon-image/loan.webp" alt="service-icon" style="width:65px " />
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title"><a href="service-single.html">Home Loan</a></h3>
+                  <h3 class="service-box-title"><a href="service-single.php">Home Loan</a></h3>
                   <p>A home loan is a secured loan taken from a financial institution for the purpose of buying a
                     residential property.Home loans can be availed from both banks and Non Banking Financial Companies
                     (NBFCs).</p>
-                  <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block" href="service-single.php" aria-label="service-details"><i
                       class="fa fa-caret-right"></i> Learn more</a>
                 </div>
               </div>
@@ -175,11 +175,11 @@ include('include/config.php');
                   <img loading="lazy" src="images/icon-image/architect.webp" alt="service-icon" style="width:65px " />
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title"><a href="service-single.html">Civil Contractor</a></h3>
+                  <h3 class="service-box-title"><a href="service-single.php">Civil Contractor</a></h3>
                   <p>Civil construction is the creation of infrastructure anything to do with water, earth, or transport
                     & construction of the individuals and companies involved in the planning, creation, & designing of
                     our infrastructure.</p>
-                  <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block" href="service-single.php" aria-label="service-details"><i
                       class="fa fa-caret-right"></i> Learn more</a>
                 </div>
               </div>
@@ -197,10 +197,10 @@ include('include/config.php');
                   <img loading="lazy" src="images/icon-image/healthcare.webp" alt="service-icon" style="width:65px " />
                 </div>
                 <div class="ts-service-info">
-                  <h3 class="service-box-title"><a href="service-single.html">Medical Health Check-up</a></h3>
+                  <h3 class="service-box-title"><a href="service-single.php">Medical Health Check-up</a></h3>
                   <p> health check package which helps in the overall assessment of all the organs and systems of the
                     body such as Heart, Liver, Kidneys, Thyroid, Urinary track infections, Diabetes, etc....</p>
-                  <a class="learn-more d-inline-block" href="service-single.html" aria-label="service-details"><i
+                  <a class="learn-more d-inline-block" href="service-single.php" aria-label="service-details"><i
                       class="fa fa-caret-right"></i> Learn more</a>
                 </div>
               </div>
@@ -210,56 +210,7 @@ include('include/config.php');
       </div><!-- Container end -->
     </section><!-- Feature are end -->
 
-    <section id="facts" class="facts-area dark-bg">
-      <div class="container">
-        <div class="facts-wrapper">
-          <div class="row">
-            <div class="col-md-3 col-sm-6 ts-facts">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact1.webp" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="0">0</span></h2>
-                <h3 class="ts-facts-title">Total Projects</h3>
-              </div>
-            </div><!-- Col end -->
-
-            <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact2.webp" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="0">0</span></h2>
-                <h3 class="ts-facts-title">Staff Members</h3>
-              </div>
-            </div><!-- Col end -->
-
-            <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact3.webp" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="0">0</span></h2>
-                <h3 class="ts-facts-title">Hours of Work</h3>
-              </div>
-            </div><!-- Col end -->
-
-            <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact4.webp" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="0">0</span></h2>
-                <h3 class="ts-facts-title">Countries Experience</h3>
-              </div>
-            </div><!-- Col end -->
-
-          </div> <!-- Facts end -->
-        </div>
-        <!--/ Content row end -->
-      </div>
-      <!--/ Container end -->
-    </section><!-- Facts end -->
+<!-- Facts end -->
 
 
 
@@ -427,7 +378,7 @@ include('include/config.php');
                   <div class="project-item-info">
                     <div class="project-item-info-content">
                       <h3 class="project-item-title">
-                        <a href="projects-single.html">GOVERNMENT E-MARKET PLACE VENDOR</a>
+                        <a href="projects-single.php">GOVERNMENT E-MARKET PLACE VENDOR</a>
                       </h3>
                       <p class="project-cat">E-MARKET</p>
                     </div>
@@ -445,7 +396,7 @@ include('include/config.php');
                   <div class="project-item-info">
                     <div class="project-item-info-content">
                       <h3 class="project-item-title">
-                        <a href="projects-single.html">ISO CERTIFICATE</a>
+                        <a href="projects-single.php">ISO CERTIFICATE</a>
                       </h3>
                       <p class="project-cat">Government</p>
                     </div>
@@ -463,7 +414,7 @@ include('include/config.php');
                   <div class="project-item-info">
                     <div class="project-item-info-content">
                       <h3 class="project-item-title">
-                        <a href="projects-single.html">REAL ESTATE</a>
+                        <a href="projects-single.php">REAL ESTATE</a>
                       </h3>
                       <p class="project-cat">Government</p>
                     </div>
@@ -481,7 +432,7 @@ include('include/config.php');
                   <div class="project-item-info">
                     <div class="project-item-info-content">
                       <h3 class="project-item-title">
-                        <a href="projects-single.html">EYE CHECK-UP</a>
+                        <a href="projects-single.php">EYE CHECK-UP</a>
                       </h3>
                       <p class="project-cat">Government</p>
                     </div>
@@ -498,7 +449,7 @@ include('include/config.php');
                   <div class="project-item-info">
                     <div class="project-item-info-content">
                       <h3 class="project-item-title">
-                        <a href="projects-single.html">CCTV</a>
+                        <a href="projects-single.php">CCTV</a>
                       </h3>
                       <p class="project-cat">Government</p>
                     </div>
@@ -516,7 +467,7 @@ include('include/config.php');
                   <div class="project-item-info">
                     <div class="project-item-info-content">
                       <h3 class="project-item-title">
-                        <a href="projects-single.html">HEART CHECK-UP</a>
+                        <a href="projects-single.php">HEART CHECK-UP</a>
                       </h3>
                       <p class="project-cat">Private</p>
                     </div>
@@ -533,7 +484,7 @@ include('include/config.php');
                   <div class="project-item-info">
                     <div class="project-item-info-content">
                       <h3 class="project-item-title">
-                        <a href="projects-single.html">CCTV</a>
+                        <a href="projects-single.php">CCTV</a>
                       </h3>
                       <p class="project-cat">Private</p>
                     </div>
@@ -552,7 +503,7 @@ include('include/config.php');
                   <div class="project-item-info">
                     <div class="project-item-info-content">
                       <h3 class="project-item-title">
-                        <a href="projects-single.html">REAL ESTATE</a>
+                        <a href="projects-single.php">REAL ESTATE</a>
                       </h3>
                       <p class="project-cat">Private</p>
                     </div>
@@ -571,7 +522,7 @@ include('include/config.php');
                   <div class="project-item-info">
                     <div class="project-item-info-content">
                       <h3 class="project-item-title">
-                        <a href="projects-single.html">ISO CERTIFICATE</a>
+                        <a href="projects-single.php">ISO CERTIFICATE</a>
                       </h3>
                       <p class="project-cat">Government</p>
                     </div>
@@ -804,13 +755,13 @@ include('include/config.php');
     <!--        <div class="col-lg-4 col-md-6 mb-4">-->
     <!--          <div class="latest-post">-->
     <!--              <div class="latest-post-media">-->
-    <!--                <a href="news-single.html" class="latest-post-img">-->
+    <!--                <a href="news-single.php" class="latest-post-img">-->
     <!--                    <img loading="lazy" class="img-fluid" src="images/news/development.webp" alt="img">-->
     <!--                </a>-->
     <!--              </div>-->
     <!--              <div class="post-body">-->
     <!--                <h4 class="post-title">-->
-    <!--                    <a href="news-single.html" class="d-inline-block">We Develop Website According to your Expectations.</a>-->
+    <!--                    <a href="news-single.php" class="d-inline-block">We Develop Website According to your Expectations.</a>-->
     <!--                </h4>-->
     <!--                <div class="latest-post-meta">-->
     <!--                    <span class="post-item-date">-->
@@ -824,13 +775,13 @@ include('include/config.php');
     <!--        <div class="col-lg-4 col-md-6 mb-4">-->
     <!--          <div class="latest-post">-->
     <!--              <div class="latest-post-media">-->
-    <!--                <a href="news-single.html" class="latest-post-img">-->
+    <!--                <a href="news-single.php" class="latest-post-img">-->
     <!--                    <img loading="lazy" class="img-fluid" src="images/news/cctv.webp" alt="img">-->
     <!--                </a>-->
     <!--              </div>-->
     <!--              <div class="post-body">-->
     <!--                <h4 class="post-title">-->
-    <!--                    <a href="news-single.html" class="d-inline-block">CCTV Installation in Complex buildings</a>-->
+    <!--                    <a href="news-single.php" class="d-inline-block">CCTV Installation in Complex buildings</a>-->
     <!--                </h4>-->
     <!--                <div class="latest-post-meta">-->
     <!--                    <span class="post-item-date">-->
@@ -844,13 +795,13 @@ include('include/config.php');
     <!--        <div class="col-lg-4 col-md-6 mb-4">-->
     <!--          <div class="latest-post">-->
     <!--              <div class="latest-post-media">-->
-    <!--                <a href="news-single.html" class="latest-post-img">-->
+    <!--                <a href="news-single.php" class="latest-post-img">-->
     <!--                    <img loading="lazy" class="img-fluid" src="images/news/realestate.webp" alt="img" style="height: 233px;">-->
     <!--                </a>-->
     <!--              </div>-->
     <!--              <div class="post-body">-->
     <!--                <h4 class="post-title">-->
-    <!--                    <a href="news-single.html" class="d-inline-block">Bulding an House with Perfect Master Peice</a>-->
+    <!--                    <a href="news-single.php" class="d-inline-block">Bulding an House with Perfect Master Peice</a>-->
     <!--                </h4>-->
     <!--                <div class="latest-post-meta">-->
     <!--                    <span class="post-item-date">-->
@@ -864,7 +815,7 @@ include('include/config.php');
     <!--/ Content row end -->
 
     <!--    <div class="general-btn text-center mt-4">-->
-    <!--        <a class="btn btn-primary" href="news-left-sidebar.html">See All Posts</a>-->
+    <!--        <a class="btn btn-primary" href="news-left-sidebar.php">See All Posts</a>-->
     <!--    </div>-->
 
     <!--  </div>-->
