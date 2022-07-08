@@ -204,7 +204,7 @@ include('include/config.php');
   <!-- The Modal -->
   <div class="modal" id="myModal">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content " style="margin-top:20%;">
+      <div class="modal-content " style="margin-top:14%;">
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Real Estate Form</h4>
@@ -229,14 +229,12 @@ include('include/config.php');
               <div class="mb-3 mt-3">
                 <textarea class="form-control" rows="5" id="comment" placeholder="Comments" name="text"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit"  style ="width:100%" class="btn btn-primary">Submit</button>
             </form>
           </div>
         </div>
         <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
+
       </div>
     </div>
   </div>
