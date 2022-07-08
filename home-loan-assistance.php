@@ -1,3 +1,23 @@
+<?php
+include('include/config.php');
+if(isset($_POST['submit'])){
+   $name=$_POST['name'];
+   $company_name=$_POST['company_name'];
+   $address=$_POST['address'];
+   $city=$_POST['city'];
+   $email=$_POST['email'];
+   $mobile=$_POST['mobile'];
+   $description=$_POST['description']; 
+   $page_name='home-loan-assistance';
+   $sql="INSERT INTO `toolsandadvice`(`name`, `company_name`, `address`, `city`, `email`, `mobile`,`description`, `page_name`) VALUES ('$name','$company_name','$address','$city','$email','$mobile','$description','$page_name')";
+   if(mysqli_query($conn,$sql)){
+      echo"<script> alert ('new record has been added succesfully!'); </script>";
+   }
+   else{
+      echo"<script> alert ('connection failed!'); </script>";
+   }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -105,12 +125,7 @@
          <div class="container">
             <div class="col-lg-12">
                <h3 class="column-title" style="margin-top:5%">Home Loan Assistance</h3>
-               <p>Consultants tend to be individuals with at least a few years of experience under their belts in a
-                  particular field or focus. It’s this insight that they then sell as a service to other companies.
-               </p>
-               <p>a Consultant is a person who provides expert advice professionally – usually, an experienced
-                  professional in a specific field who possesses a comprehensive knowledge of the subject matter and
-                  uses it to help solve a client's problem.</p>
+               <p>We will help you make a home loan process quick and simple. We are associated and have tie-up with several reputed banks and Financial Institutions through which we will get you loans at most competitive rates, So you can also be a proud home owner. Whether you are salaried or self-employed, we will assist you to get home loan for the purchase of flats, row houses, bungalows and even plots. We ensure for faster processing and affordable EMIs to make home loans the perfect choice for new or experienced buyers. We also offer expert legal and technical counselling to make the home buying process much easier. Let us lend you a helping hand in making your dream come true.</p>
 
             </div>
          </div>
@@ -124,20 +139,20 @@
                   <h3 class="column-title">Enquiry Details</h3>
                   <!-- contact form works with formspree.io  -->
                   <!-- contact form activation doc: https://docs.themefisher.com/PP Consultancy/contact-form/ -->
-                  <form id="contact-form" action="contact.php" method="post" role="form">
+                     <form id="contact-form" action="#" method="post">
                      <div class="error-container"></div>
 
 
                      <div class="row">
                         <div class="col-md-6">
                            <div class="form-group">
-                              <input class="form-control form-control-email" name="name" id="name"
-                                 placeholder=" Your Name" type="email" required>
+                              <input class="form-control form-control-message" name="name" id="name"
+                                 placeholder=" Your Name" type="text" required>
                            </div>
                         </div>
                         <div class="col-md-6">
                            <div class="form-group">
-                              <input class="form-control form-control-mobile" name="text" id="company"
+                              <input class="form-control form-control-mobile" name="company_name" id="company"
                                  placeholder="Company Name" required>
                            </div>
                         </div>
@@ -169,7 +184,7 @@
                            placeholder="Description" rows="5" required></textarea>
                      </div>
                      <div class="text-center"><br>
-                        <button class="btn btn-primary solid blank checkValidationBtn" type="submit"
+                        <button class="btn btn-primary solid blank checkValidationBtn" type="submit" name="submit"
                            id="button_submit">Submit</button>
 
                      </div>
