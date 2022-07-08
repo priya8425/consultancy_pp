@@ -18,7 +18,7 @@ include('include/config.php');
 
   <!-- Favicon
 ================================================== -->
-  <link rel="icon" type="image/png" href="images/pp.jpg">
+  <link rel="icon" type="image/webp" href="images/pp.webp">
 
   <!-- CSS
 ================================================== -->
@@ -79,7 +79,7 @@ include('include/config.php');
 <!-- Header start -->
 <?php include("include/header.php");?>
 <!--/ Header end -->
-<div id="banner-area" class="banner-area" style="background-image:url(images/banner/aboutus.jpg)">
+<div id="banner-area" class="banner-area" style="background-image:url(images/banner/aboutus.webp)">
   <div class="banner-text">
     <div class="container">
         <div class="row">
@@ -120,7 +120,7 @@ include('include/config.php');
           
           <div id="page-slider" class="page-slider small-bg">
 
-              <div class="item" style="background-image:url(images/slider-pages/leadership.jpg)">
+              <div class="item" style="background-image:url(images/slider-pages/leadership.webp)">
                 <div class="container">
                     <div class="box-slider-content">
                       <div class="box-slider-text">
@@ -130,7 +130,7 @@ include('include/config.php');
                 </div>
               </div><!-- Item 1 end -->
 
-              <div class="item" style="background-image:url(images/slider-pages/relationship.jpg)">
+              <div class="item" style="background-image:url(images/slider-pages/relationship.webp)">
                 <div class="container">
                     <div class="box-slider-content">
                       <div class="box-slider-text">
@@ -140,7 +140,7 @@ include('include/config.php');
                 </div>
               </div><!-- Item 1 end -->
 
-              <div class="item" style="background-image:url(images/slider-pages/performance.jpg)">
+              <div class="item" style="background-image:url(images/slider-pages/performance.webp)">
                 <div class="container">
                     <div class="box-slider-content">
                       <div class="box-slider-text">
@@ -165,7 +165,7 @@ include('include/config.php');
         <div class="row">
           <div class="col-md-3 col-sm-6 ts-facts">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact1.png" alt="facts-img">
+                <img loading="lazy" src="images/icon-image/fact1.webp" alt="facts-img">
               </div>
               <div class="ts-facts-content">
                 <h2 class="ts-facts-num"><span class="counterUp" data-count="2">0</span></h2>
@@ -175,7 +175,7 @@ include('include/config.php');
 
           <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact2.png" alt="facts-img">
+                <img loading="lazy" src="images/icon-image/fact2.webp" alt="facts-img">
               </div>
               <div class="ts-facts-content">
                 <h2 class="ts-facts-num"><span class="counterUp" data-count="7">0</span></h2>
@@ -185,7 +185,7 @@ include('include/config.php');
 
           <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact3.png" alt="facts-img">
+                <img loading="lazy" src="images/icon-image/fact3.webp" alt="facts-img">
               </div>
               <div class="ts-facts-content">
                 <h2 class="ts-facts-num"><span class="counterUp" data-count="4">0</span></h2>
@@ -195,7 +195,7 @@ include('include/config.php');
 
           <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
               <div class="ts-facts-img">
-                <img loading="lazy" src="images/icon-image/fact4.png" alt="facts-img">
+                <img loading="lazy" src="images/icon-image/fact4.webp" alt="facts-img">
               </div>
               <div class="ts-facts-content">
                 <h2 class="ts-facts-num"><span class="counterUp" data-count="2">0</span></h2>
@@ -225,7 +225,7 @@ include('include/config.php');
 <!--              <div class="item">-->
 <!--                <div class="ts-team-wrapper">-->
 <!--                    <div class="team-img-wrapper">-->
-<!--                      <img loading="lazy" class="w-100" src="images/team/team1.jpg" alt="team-img">-->
+<!--                      <img loading="lazy" class="w-100" src="images/team/team1.webp" alt="team-img">-->
 <!--                    </div>-->
 <!--                    <div class="ts-team-content">-->
 <!--                      <h3 class="ts-name">Stenman scre</h3>-->
@@ -244,7 +244,7 @@ include('include/config.php');
 <!--              <div class="item">-->
 <!--                <div class="ts-team-wrapper">-->
 <!--                    <div class="team-img-wrapper">-->
-<!--                      <img loading="lazy" class="w-100" src="images/team/team2.jpg" alt="team-img">
+<!--                      <img loading="lazy" class="w-100" src="images/team/team2.webp" alt="team-img">
 <!--                    </div>-->
 <!--                    <div class="ts-team-content">-->
 <!--                      <h3 class="ts-name">Angela loqu</h3>-->
@@ -262,7 +262,7 @@ include('include/config.php');
 <!--              <div class="item">-->
 <!--                <div class="ts-team-wrapper">-->
 <!--                    <div class="team-img-wrapper">-->
-<!--                      <img loading="lazy" class="w-100" src="images/team/team3.jpg" alt="team-img">-->
+<!--                      <img loading="lazy" class="w-100" src="images/team/team3.webp" alt="team-img">-->
 <!--                    </div>-->
 <!--                    <div class="ts-team-content">-->
 <!--                      <h3 class="ts-name">Mark Stev</h3>-->
@@ -280,7 +280,7 @@ include('include/config.php');
 <!--              <div class="item">-->
 <!--                <div class="ts-team-wrapper">-->
 <!--                    <div class="team-img-wrapper">-->
-<!--                      <img loading="lazy" class="w-100" src="images/team/team4.jpg" alt="team-img">-->
+<!--                      <img loading="lazy" class="w-100" src="images/team/team4.webp" alt="team-img">-->
 <!--                    </div>-->
 <!--                    <div class="ts-team-content">-->
 <!--                      <h3 class="ts-name">Ayesha Stenk</h3>-->
@@ -299,7 +299,7 @@ include('include/config.php');
 <!--              <div class="item">-->
 <!--                <div class="ts-team-wrapper">-->
 <!--                    <div class="team-img-wrapper">-->
-<!--                      <img loading="lazy" class="w-100" src="images/team/team5.jpg" alt="team-img">-->
+<!--                      <img loading="lazy" class="w-100" src="images/team/team5.webp" alt="team-img">-->
 <!--                    </div>-->
 <!--                    <div class="ts-team-content">-->
 <!--                      <h3 class="ts-name">Dave Clark</h3>-->
@@ -317,7 +317,7 @@ include('include/config.php');
 <!--              <div class="item">-->
 <!--                <div class="ts-team-wrapper">-->
 <!--                    <div class="team-img-wrapper">-->
-<!--                      <img loading="lazy" class="w-100" src="images/team/team6.jpg" alt="team-img">-->
+<!--                      <img loading="lazy" class="w-100" src="images/team/team6.webp" alt="team-img">-->
 <!--                    </div>-->
 <!--                    <div class="ts-team-content">-->
 <!--                      <h3 class="ts-name">Elton Joe</h3>-->
