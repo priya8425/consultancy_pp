@@ -138,7 +138,7 @@ include('include/config.php');
 
           <div class="col-xl-8 col-lg-8">
             <?php
-            $sql=mysqli_query($conn,"Select * from  services where page_name= 'iso-certificate'");
+            $sql=mysqli_query($conn,"Select * from  services where page_name= 'cctv'");
                while($arr=mysqli_fetch_array($sql)){
              ?>
             <div class="content-inner-page">
