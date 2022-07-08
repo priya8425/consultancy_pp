@@ -98,7 +98,7 @@ include('include/config.php');
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Services</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Service Single</li>
+                    <li class="breadcrumb-item active" aria-current="page">E-Marketing Vendor</li>
                   </ol>
                 </nav>
               </div>
@@ -109,126 +109,169 @@ include('include/config.php');
     </div><!-- Banner area end -->
 
     <section id="main-container" class="main-container">
-  <div class="container">
-    <div class="row">
+      <div class="container">
+        <div class="row">
 
-      <div class="col-xl-3 col-lg-4">
-        <div class="sidebar sidebar-left">
-          <div class="widget">
-            <h3 class="widget-title">Solutions</h3>
-            <ul class="nav service-menu">
-              <li class="active"><a href="e-marketing.php">E-Marketing Vendor</a></li>
-              <li><a href="real-estate.php">Real Estate</a></li>
-              <li ><a href="home-loan.php">Home Loan</a></li>
-              <li ><a href="registration.php">Registration</a></li>
-              <li><a href="architect-service.php">Architect Services- Drawing & Planning</a></li>
-              <li ><a href="civil-constructor.php">Civil Constructor</a></li>
-              <li><a href="iso-certificate.php">ISO Certification</a></li>
-              <li><a href="medical-checkup.php">Medical Health Checkup</a></li>
-              <li><a href="cctv.php">CCTV Installation</a></li>
-              <li><a href="web-development.php">Web Development</a></li>
-              
-            </ul>
-          </div><!-- Widget end -->
+          <div class="col-xl-3 col-lg-4">
+            <div class="sidebar sidebar-left">
+              <div class="widget">
+                <h3 class="widget-title">Solutions</h3>
+                <ul class="nav service-menu">
+                  <li class="active"><a href="e-marketing.php">E-Marketing Vendor</a></li>
+                  <li><a href="real-estate.php">Real Estate</a></li>
+                  <li><a href="home-loan.php">Home Loan</a></li>
+                  <li><a href="registration.php">Registration</a></li>
+                  <li><a href="architect-service.php">Architect Services- Drawing & Planning</a></li>
+                  <li><a href="civil-constructor.php">Civil Constructor</a></li>
+                  <li><a href="iso-certificate.php">ISO Certification</a></li>
+                  <li><a href="medical-checkup.php">Medical Health Checkup</a></li>
+                  <li><a href="cctv.php">CCTV Installation</a></li>
+                  <li><a href="web-development.php">Web Development</a></li>
 
-         <!-- Widget end -->
+                </ul>
+              </div><!-- Widget end -->
 
-        </div><!-- Sidebar end -->
-      </div><!-- Sidebar Col end -->
+              <!-- Widget end -->
 
-      <div class="col-xl-8 col-lg-8">
-      <?php
+            </div><!-- Sidebar end -->
+          </div><!-- Sidebar Col end -->
+
+          <div class="col-xl-8 col-lg-8">
+            <?php
             $sql=mysqli_query($conn,"Select * from  services where page_name= 'e-marketing'");
                while($arr=mysqli_fetch_array($sql)){
              ?>
-        <div class="content-inner-page">
+            <div class="content-inner-page">
 
-          <h2 class="column-title mrt-0"><?php echo $arr['name']?></h2>
+              <h2 class="column-title mrt-0"><?php echo $arr['name']?></h2>
 
-          <div class="row">
-            <div class="col-md-12">
-              <p><?php echo $arr['content']?></p>
-             
-            </div><!-- col end -->
-          </div><!-- 1st row end-->
+              <div class="row">
+                <div class="col-md-12">
+                  <p><?php echo $arr['content']?></p>
 
-          <div class="gap-40"></div>
+                </div><!-- col end -->
+              </div><!-- 1st row end-->
 
-          
-            <div class="course-img">
-                                <img src="admin/dist/img/credit/<?php echo $arr['image'];?>"
-                                    style="height: 250px; width: 500px; ">
-                            </div>
-            
-          </div><!-- Page slider end -->
+              <div class="gap-40"></div>
 
-          <div class="gap-40"></div>
 
-          <div class="row">
-            <div class="col-md-6">
-              <h3><?php echo $arr['description_name']?></h3>
-            <p><?php echo $arr['description']?></p>
+              <div class="course-img">
+                <img src="admin/dist/img/credit/<?php echo $arr['image'];?>" style="height: 250px; width: 500px; ">
+              </div>
+
+            </div><!-- Page slider end -->
+
+            <div class="gap-40"></div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <h3><?php echo $arr['description_name']?></h3>
+                <p><?php echo $arr['description']?></p>
+
+              </div>
+
 
             </div>
+            <?php } ?>
+            <!--2nd row end -->
 
-           
-          </div>
-          <?php } ?>
-          <!--2nd row end -->
+            <div class="gap-40"></div>
 
-          <div class="gap-40"></div>
+            <div class="call-to-action classic">
+              <div class="row align-items-center">
+                <div class="col-md-8 text-center text-md-left">
+                  <div class="call-to-action-text">
+                    <h3 class="action-title">Interested with this service.</h3>
+                  </div>
+                </div><!-- Col end -->
+                <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
+                  <div class="call-to-action-btn">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" href="#">Get a
+                      Quote</button>
+                  </div>
+                </div><!-- col end -->
+              </div><!-- row end -->
+            </div><!-- Action end -->
 
-          <div class="call-to-action classic">
-            <div class="row align-items-center">
-              <div class="col-md-8 text-center text-md-left">
-                <div class="call-to-action-text">
-                  <h3 class="action-title">Interested with this service.</h3>
-                </div>
-              </div><!-- Col end -->
-              <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
-                <div class="call-to-action-btn">
-                  <a class="btn btn-primary" href="#">Get a Quote</a>
-                </div>
-              </div><!-- col end -->
-            </div><!-- row end -->
-          </div><!-- Action end -->
-
-        </div><!-- Content inner end -->
-      </div><!-- Content Col end -->
+          </div><!-- Content inner end -->
+        </div><!-- Content Col end -->
 
 
-    </div><!-- Main row end -->
+      </div><!-- Main row end -->
   </div><!-- Conatiner end -->
-</section><!-- Main container end -->
-
-    <?php include("include/footer.php");?><!-- Footer end -->
-
-    <!-- Footer end -->
+  </section><!-- Main container end -->
 
 
-    <!-- Javascript Files
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content " style="margin-top:20%;">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">E-Marketing Vendor Form</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container mt-3">
+            <form action="/action_page.php">
+              <div class="row">
+                <div class=" col-sm-6 mb-3 ">
+                  <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                </div>
+                <div class="col-sm-6 mb-3 ">
+                  <input type="number" class="form-control" id="number" placeholder="Enter Mobile" name="mobile"
+                    min="10" max="10">
+                </div>
+              </div>
+              <div class="mb-3 mt-3">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="mb-3 mt-3">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Comments" name="text"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <?php include("include/footer.php");?>
+  <!-- Footer end -->
+
+  <!-- Footer end -->
+
+
+  <!-- Javascript Files
   ================================================== -->
 
-    <!-- initialize jQuery Library -->
-    <script src="plugins/jQuery/jquery.min.js"></script>
-    <!-- Bootstrap jQuery -->
-    <script src="plugins/bootstrap/bootstrap.min.js" defer></script>
-    <!-- Slick Carousel -->
-    <script src="plugins/slick/slick.min.js"></script>
-    <script src="plugins/slick/slick-animation.min.js"></script>
-    <!-- Color box -->
-    <script src="plugins/colorbox/jquery.colorbox.js"></script>
-    <!-- shuffle -->
-    <script src="plugins/shuffle/shuffle.min.js" defer></script>
+  <!-- initialize jQuery Library -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap jQuery -->
+  <script src="plugins/bootstrap/bootstrap.min.js" defer></script>
+  <!-- Slick Carousel -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/slick/slick-animation.min.js"></script>
+  <!-- Color box -->
+  <script src="plugins/colorbox/jquery.colorbox.js"></script>
+  <!-- shuffle -->
+  <script src="plugins/shuffle/shuffle.min.js" defer></script>
 
 
-    <!-- Google Map API Key-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
-    <!-- Google Map Plugin-->
-    <script src="plugins/google-map/map.js" defer></script>
+  <!-- Google Map API Key-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
+  <!-- Google Map Plugin-->
+  <script src="plugins/google-map/map.js" defer></script>
 
-    <!-- Template custom -->
-    <script src="js/script.js"></script>
+  <!-- Template custom -->
+  <script src="js/script.js"></script>
 
   </div><!-- Body inner end -->
 </body>
