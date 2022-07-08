@@ -109,17 +109,17 @@ include('include/config.php');
           <div class="widget">
             <h3 class="widget-title">Solutions</h3>
             <ul class="nav service-menu">
-                <li><a href="e-marketing.html">E-Marketing Vendor</a></li>
-              <li><a href="real-estate.html">Real Estate</a></li>
-              <li ><a href="home-loan.html">Home Loan</a></li>
-              <li ><a href="registration.html">Registration</a></li>
-              <li><a href="architect-service.html">Architect Services- Drawing & Planning</a></li>
-              <li ><a href="civil-constructor.html">Civil Constructor</a></li>
-              <li><a href="iso-certificate.html">ISO Certification</a></li>
-              <li><a href="medical-checkup.html">Medical Health Checkup</a></li>
-              <li  class="active"><a href="cctv.html">CCTV Installation</a></li>
-              <li><a href="web-development.html">Web Development</a></li>
-              <li><a href="loan-service.html">Loan Services</a></li>
+                <li><a href="e-marketing.php">E-Marketing Vendor</a></li>
+              <li><a href="real-estate.php">Real Estate</a></li>
+              <li ><a href="home-loan.php">Home Loan</a></li>
+              <li ><a href="registration.php">Registration</a></li>
+              <li><a href="architect-service.php">Architect Services- Drawing & Planning</a></li>
+              <li class="active"><a href="civil-constructor.php">Civil Constructor</a></li>
+              <li><a href="iso-certificate.php">ISO Certification</a></li>
+              <li><a href="medical-checkup.php">Medical Health Checkup</a></li>
+              <li  ><a href="cctv.php">CCTV Installation</a></li>
+              <li><a href="web-development.php">Web Development</a></li>
+              <li><a href="loan-service.php">Loan Services</a></li>
             </ul>
           </div><!-- Widget end -->
 
