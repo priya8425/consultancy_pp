@@ -305,7 +305,7 @@ include('include/config.php');
                         <div class="listing-badges">
                           <span style="" class="featured">Featured</span>
                         </div>
-                        <div class="price-box" href="contact.php"><span class="rent">Contact For Price</span>
+                        <div class="price-box" ><span href="contact.php" class="rent">Contact For Price</span>
                         </div>
 
                       </div>
@@ -316,18 +316,18 @@ include('include/config.php');
                         <div class="listing-badges">
                           <span style="" class="featured">Featured</span>
                         </div>
-                        <div class="price-box" href="contact.php"><span class="rent">Contact For Price</span>
+                        <div class="price-box" ><span href="contact.php" class="rent">Contact For Price</span>
                         </div>
 
                       </div>
                     </div><!-- Item 1 end -->
 
-                    <div class="item" style="background-image:url(images/slider-pages/6.webp)">
+                    <div class="item" href="contact.php" style="background-image:url(images/slider-pages/6.webp)">
                       <div class="container">
                         <div class="listing-badges">
                           <span style="" class="featured">Featured</span>
                         </div>
-                        <div class="price-box" href="contact.php"><span class="rent">Contact For Price</span>
+                        <div class="price-box" ><span href="contact.php" class="rent">Contact For Price</span>
                         </div>
 
                       </div>
