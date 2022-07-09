@@ -4,7 +4,7 @@
       <div class="row justify-content-between">
         <div class="col-lg-3 col-md-6 footer-widget footer-about">
           <h3 class="widget-title">PP Consultancy</h3>
-          <img loading="lazy" width="200px" class="footer-logo" src="images/footerr.png" alt="PP Consultancy"
+          <img loading="lazy" width="200px" class="footer-logo" src="images/footerr.webp" alt="PP Consultancy"
             style="width:100px;">
           <p>As expert, specialist, we provides advice and further purposeful activities in an area of specialization.
           </p>
