@@ -1,20 +1,12 @@
 <?php
 include("../../../include/config.php");
-if(isset($_POST["submit"])){
-
-    $about=$_POST['about'];
-    $name=$_POST['name'];
-    $description=$_POST['description'];
-    $image=$_FILES['image']['name'];   
-    $filedet=$_FILES['image']['tmp_name'];
-    $loc="../../dist/img/credit/".$image;
-    move_uploaded_file($filedet,$loc);
-   
-    
-    $sql = "UPDATE  testimonials SET about = '$about', name = '$name', description = '$description', image = '$image' WHERE page_name = 'instructor';";
-    $result=mysqli_query($conn, $sql);
-    
-    }
+if(isset($_GET['delid'])){
+  $id=mysqli_real_escape_string($conn,$_GET['delid']);
+  $dnk=mysqli_query($conn,"delete from testimonials where id='$id'");
+  if($dnk=1){
+    header("location:instructor.php");
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -212,65 +204,7 @@ if(isset($_POST["submit"])){
     </section>
 
     <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- left column -->
-          <div class="col-md-12">
-            <!-- general form elements -->
-            <div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">Quick Example</h3>
-              </div>
-              <!-- /.card-header -->
-              <!-- form start -->
-              <form method="POST" enctype="multipart/form-data">
-                <div class="card-body">
-                  
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Description</label>
-                    <textarea type="text" class="form-control" name="description" id="example2" placeholder="Enter Description"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputFile">Image</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" name="image" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
-                      <div class="input-group-append">
-                        <span class="input-group-text">Upload</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" name="name" id="example2" placeholder="Enter Description">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">about</label>
-                    <input type="text" class="form-control" name="about" id="example2" placeholder="Enter Description">
-                  </div>
-                </div>
-                <!-- /.card-body -->
-
-                <div class="card-footer">
-                  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
-
-              
-
-              <!-- /.card-header -->
-            
-            </div>
-           
-
-          </div>
-          
-        </div>
-        <!-- /.row -->
-      </div>
+    
     </section>
     <section class="content">
       <div class="container-fluid">
@@ -308,14 +242,12 @@ if(isset($_POST["submit"])){
                             <td><?php echo $arr['about'];?></td>
                             <td>
                        
-                        <a href="#"><button type="button"
-                              class="btn btn-danger btn-md" style="color: aliceblue"> <i
+                            <a href="#"><button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                              class="btn btn-danger btn-md dnkd2" data-id="<?php echo $arr['id'] ?>" style="color: aliceblue"> <i
                                 class="fas fa-pen"></i></button></a>
 
-                                <a href="#"><button type="button"
-                              class="btn btn-danger btn-md" style="color: aliceblue"> <i
+                                <a href="instructor.php?delid=<?php echo $arr['id'];?>"><button type="button" class="btn btn-danger btn-md" onclick="confirm delete()" style="color: aliceblue"> <i
                                 class="fas fa-trash"></i></button></a>
-                                </td>
                       </tr>
                       <?php $count++; }  ?>
                     </tbody>
@@ -335,7 +267,32 @@ if(isset($_POST["submit"])){
     </div>
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
   </footer>
+  <div class="modal fade" id="exampleModal1">
+      <div class="modal-dialog">
+        <div class="modal-content ">
+        <div class="modal-header">
+             
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+     <form method="post" action="cctv-form.php" enctype="multipart/form-data">
+           <div class="modal-body body2">
 
+              
+           </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary" name="submit1" >Submit</button>
+            </div></form>
+
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+      <!-- /.modal-dialog -->
+    </div>
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
@@ -395,6 +352,23 @@ if(isset($_POST["submit"])){
 <script>
 $(function () {
   bsCustomFileInput.init();
+});
+</script>
+<script>
+$(document).ready(function(){
+$('.dnkd2').click(function(){
+  let dnkdd = $(this).data('id');
+
+  $.ajax({
+   url: 'cctv-form.php',
+   type: 'post',
+   data: {dnkdd:dnkdd},
+   success: function(response1){ 
+     $('.body2').html(response1);
+     $('#exampleModal1').modal('show'); 
+   }
+ });
+});
 });
 </script>
 </body>

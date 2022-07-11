@@ -1,21 +1,12 @@
 <?php
 include("../../../include/config.php");
-if(isset($_POST["submit"])){
-
-    $name=$_POST['name'];
-    $content=$_POST['content'];
-    $description_name=$_POST['description_name'];
-    $description=$_POST['description'];
-    $image=$_FILES['image']['name'];   
-    $filedet=$_FILES['image']['tmp_name'];
-    $loc="../../dist/img/credit/".$image;
-    move_uploaded_file($filedet,$loc);
-   
-    
-    $sql = "UPDATE services SET name = '$name', content = '$content', description_name = '$description_name', description = '$description', image = '$image' WHERE page_name = 'cctv';";
-    $result=mysqli_query($conn, $sql);
-    
-    }
+if(isset($_GET['delid'])){
+  $id=mysqli_real_escape_string($conn,$_GET['delid']);
+  $dnk=mysqli_query($conn,"delete from services where id='$id'");
+  if($dnk=1){
+    header("location:cctv.php");
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +17,8 @@ if(isset($_POST["submit"])){
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
@@ -180,18 +173,8 @@ if(isset($_POST["submit"])){
   </nav>
   <!-- /.navbar -->
 
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="../../index3.html" class="brand-link">
-      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
-
-    <!-- Sidebar -->
-    <?php include("sidebar.php");?>
-    <!-- /.sidebar -->
-  </aside>
+  <?php include("sidebar.php"); ?>
+  
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -200,7 +183,7 @@ if(isset($_POST["submit"])){
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Cctv</h1>
+            <h1>Civil Constructor</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -213,81 +196,19 @@ if(isset($_POST["submit"])){
     </section>
 
     <!-- Main content -->
+  
     <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- left column -->
-          <div class="col-md-12">
-            <!-- general form elements -->
-            <div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">Quick Example</h3>
-              </div>
-              <!-- /.card-header -->
-              <!-- form start -->
-              <form method="POST" enctype="multipart/form-data">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">DataTable </h3>
+                </div>
+                <!-- /.card-header -->
                 <div class="card-body">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" name="name" id="exampleInputEmail1" placeholder="Enter email">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Content</label>
-                    <textarea type="text" class="form-control" name="content" id="example2" placeholder="Enter Description"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputFile">Image</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" name="image" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
-                      <div class="input-group-append">
-                        <span class="input-group-text">Upload</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" name="description_name" id="example2" placeholder="Enter Description">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Description</label>
-                    <textarea type="text" class="form-control" name="description" id="example2" placeholder="Enter Description"></textarea>
-                  </div>
-                </div>
-                <!-- /.card-body -->
-
-                <div class="card-footer">
-                  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
-
-              
-
-              <!-- /.card-header -->
-            
-            </div>
-           
-
-          </div>
-          
-        </div>
-        <!-- /.row -->
-      </div>
-    </section>
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-          <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">DataTable </h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
-                <thead>
+                  <table id="example1" class="table table-bordered table-striped">
+                    <thead>
                       <tr>
                         <th>Sr.No</th>
                         <th>Name</th>
@@ -298,7 +219,7 @@ if(isset($_POST["submit"])){
                         <th>Action</th>
                       </tr>
                     </thead>
-                  <tbody>
+                    <tbody>
                       <?php     
                         $sql=mysqli_query($conn,"select * from services");
                         $count=1;
@@ -310,27 +231,25 @@ if(isset($_POST["submit"])){
                         <td><?php echo $arr['content'];?></td>
                         <td><img src="../../dist/img/credit/<?php echo $arr['image'];?>"
                             style="height:150px; width:150px;"></td>
-                            <td><?php echo $arr['description_name'];?></td>
-                        <td ><?php echo $arr['description'];?></td>
-                        <td> 
-                        <a href="#"><button type="button"
-                              class="btn btn-danger btn-md" style="color: aliceblue"> <i
+                        <td><?php echo $arr['description_name'];?></td>
+                        <td><?php echo $arr['description'];?></td>
+                        <td>
+                          <a href="#"><button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                              class="btn btn-danger btn-md dnkd1" data-id="<?php echo $arr['id'] ?>" style="color: aliceblue"> <i
                                 class="fas fa-pen"></i></button></a>
 
-                                <a href="#"><button type="button"
-                              class="btn btn-danger btn-md" style="color: aliceblue"> <i
+                          <a href="cctv.php?delid=<?php echo $arr['id'];?>"><button type="button" class="btn btn-danger btn-md" onclick="confirm delete()" style="color: aliceblue"> <i
                                 class="fas fa-trash"></i></button></a>
                       </tr>
                       <?php $count++; }  ?>
                     </tbody>
-                </table>
+                  </table>
+                </div>
+                <!-- /.card-body -->
               </div>
-              <!-- /.card-body -->
-            </div>
-            </section>
+      </section>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
-      
     
   <!-- /.content-wrapper -->
   <footer class="main-footer">
@@ -339,6 +258,38 @@ if(isset($_POST["submit"])){
     </div>
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
   </footer>
+
+
+
+  <div class="modal fade" id="exampleModal">
+      <div class="modal-dialog">
+        <div class="modal-content ">
+        <div class="modal-header">
+             
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+     <form method="post" action="cctv-form.php" enctype="multipart/form-data">
+           <div class="modal-body body1">
+
+              
+           </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary" name="submit" >Submit</button>
+            </div></form>
+
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+      <!-- /.modal-dialog -->
+    </div>
+
+
+
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -399,6 +350,23 @@ if(isset($_POST["submit"])){
 <script>
 $(function () {
   bsCustomFileInput.init();
+});
+</script>
+<script>
+$(document).ready(function(){
+$('.dnkd1').click(function(){
+  let dnkd = $(this).data('id');
+
+  $.ajax({
+   url: 'cctv-form.php',
+   type: 'post',
+   data: {dnkd: dnkd},
+   success: function(response1){ 
+     $('.body1').html(response1);
+     $('#exampleModal').modal('show'); 
+   }
+ });
+});
 });
 </script>
 </body>

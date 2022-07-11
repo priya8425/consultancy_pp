@@ -180,7 +180,7 @@ include('include/config.php');
       <div class=" row container">
         <div class="container col-sm-8">
           <?php
-            $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor2'");
+            $sql=mysqli_query($conn,"Select * from  residental where page_name='1'");
                while($arr=mysqli_fetch_array($sql)){
              ?>
           <div class="row">
@@ -223,8 +223,9 @@ include('include/config.php');
 
             </div>
             <div class="col-lg-6">
+            
               <h3 class="column-title"><?php echo $arr['name']?></h3>
-              <p><?php echo $arr['description']?>
+              <p><?php echo $arr['content']?>
               </p>
 
             </div>
@@ -301,14 +302,14 @@ include('include/config.php');
     <section id="main-container" class=" container" style="text-align:center; margin-top:1%">
       <div class=" row container">
         <div class="container col-sm-8">
-          <?php
-            $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor2'");
-               while($arr=mysqli_fetch_array($sql)){
-             ?>
+          
           <div class="row">
 
             <div class="col-lg-6 col-md-12">
-
+            <?php
+            $sql=mysqli_query($conn,"Select * from  residental where page_name='2'");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
               <div id="page-slider" class="page-slider small-bg">
 
                 <div class="item" style="background-image:url(images/slider-pages/relationship.webp)">
@@ -346,7 +347,7 @@ include('include/config.php');
             </div>
             <div class="col-lg-6 col-md-12">
               <h3 class="column-title"><?php echo $arr['name']?></h3>
-              <p><?php echo $arr['description']?>
+              <p><?php echo $arr['content']?>
               </p>
 
             </div>
@@ -361,14 +362,14 @@ include('include/config.php');
     <section id="main-container" class=" container" style="text-align:center; margin-top:1%">
       <div class=" row container">
         <div class="container col-sm-8">
-          <?php
-            $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor2'");
-               while($arr=mysqli_fetch_array($sql)){
-             ?>
+        
           <div class="row">
 
             <div class="col-lg-6 col-md-12">
-
+            <?php
+            $sql=mysqli_query($conn,"Select * from  residental where page_name='3' ");
+               while($arr=mysqli_fetch_array($sql)){
+             ?>
               <div id="page-slider" class="page-slider small-bg">
 
                 <div class="item" style="background-image:url(images/slider-pages/relationship.webp)">
@@ -406,7 +407,7 @@ include('include/config.php');
             </div>
             <div class="col-lg-6 col-md-12">
               <h3 class="column-title"><?php echo $arr['name']?></h3>
-              <p><?php echo $arr['description']?>
+              <p><?php echo $arr['content']?>
               </p>
 
             </div>
