@@ -4,7 +4,7 @@
       <div class="row justify-content-between">
         <div class="col-lg-3 col-md-6 footer-widget footer-about">
           <h3 class="widget-title">PP Consultancy</h3>
-          <img loading="lazy" width="200px" class="footer-logo" src="images/footerr.png" alt="PP Consultancy"
+          <img loading="lazy" width="200px" class="footer-logo" src="images/footerr.webp" alt="PP Consultancy"
             style="width:100px;">
           <p>As expert, specialist, we provides advice and further purposeful activities in an area of specialization.
           </p>
@@ -23,21 +23,21 @@
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
           <h3 class="widget-title">Services</h3>
           <ul class="list-arrow">
-            <li><a href="e-marketing.html">Government eMarketplace Vendor</a></li>
-            <li><a href="real-estate.html">Real Estate </a></li>
-            <li><a href="home-loan.html">Home Loan</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="architect-service.html">Architectural Services</a></li>
+            <li><a href="e-marketing.php">Government eMarketplace Vendor</a></li>
+            <li><a href="real-estate.php">Real Estate </a></li>
+            <li><a href="home-loan.php">Home Loan</a></li>
+            <li><a href="registration.php">Registration</a></li>
+            <li><a href="architect-service.php">Architectural Services</a></li>
           </ul>
         </div>
         <div class=" col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
           <h3 class=""><br></h3>
           <ul class="list-arrow">
-            <li><a href="civil-constructor.html">Civil Contractor</a></li>
-            <li><a href="iso-certificate.html">ISO Certification</a></li>
-            <li><a href="medical-checkup.html">Medical Health Check-up</a></li>
-            <li><a href="cctv.html">CCTV Installation</a></li>
-            <li><a href="web-development.html">Web Development</a></li><br>
+            <li><a href="civil-constructor.php">Civil Contractor</a></li>
+            <li><a href="iso-certificate.php">ISO Certification</a></li>
+            <li><a href="medical-checkup.php">Medical Health Check-up</a></li>
+            <li><a href="cctv.php">CCTV Installation</a></li>
+            <li><a href="web-development.php">Web Development</a></li><br>
 
           </ul>
         </div>
@@ -79,9 +79,9 @@
         <!-- <div class="col-md-6">-->
         <!--  <div class="footer-menu text-center text-md-right">-->
         <!--    <ul class="list-unstyled">-->
-        <!--      <li><a href="about.html">About</a></li>-->
-        <!--      <li><a href="team.html">Our people</a></li>-->
-        <!--      <li><a href="faq.html">Faq</a></li>-->
+        <!--      <li><a href="about.php">About</a></li>-->
+        <!--      <li><a href="team.php">Our people</a></li>-->
+        <!--      <li><a href="faq.php">Faq</a></li>-->
         <!--    </ul>-->
         <!--  </div>-->
         <!--</div> -->
