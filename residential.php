@@ -270,18 +270,6 @@ include('include/config.php');
     </div><!-- Banner area end -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     <div class=" container" style="margin-top:3%">
 
       <div class="row">
