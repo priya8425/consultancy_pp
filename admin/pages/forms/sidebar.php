@@ -52,46 +52,62 @@
            
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="cctv.php" class="nav-link">
             <i class="nav-icon fas fa-copy"></i>
               <p>
                Services
-                <i class="right fas fa-angle-left"></i>
+                
               </p>
               </a>
-            <ul class="nav nav-treeview">
-              
-              <li class="nav-item">
-                <a href="cctv.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>All Services</p>
-                </a>
-              </li>
-            </ul>
+           
           </li>
   
           <li class="nav-item">
             <a href="instructor.php" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
-               Instructor
+               Testimonial
                
                
               </p>
             </a>
            
           </li>
-          <li class="nav-item">
+         
             
-            <ul class="nav nav-treeview">
+            
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Testimonial</p>
+                <a href="toolsandadvice" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>tools & Advice</p>
                 </a>
               </li>
-</ul>
+
+              <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-copy"></i>
+              <p>
+               Properties
+                <i class="right fas fa-angle-left"></i>
+              </p>
+              </a>
+            <ul class="nav nav-treeview">
+              
+              <li class="nav-item">
+                <a href="residental.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Residential</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="commercial.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Commercial</p>
+                </a>
+              </li>
+            </ul>
           </li>
+          
           <li class="nav-item">
             <a href="logout.php" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>

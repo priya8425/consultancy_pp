@@ -279,7 +279,7 @@ include('include/config.php');
             <div class="shadow p-3 mb-5 bg-white rounded">
 
               <?php
-              $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor2'");
+              $sql=mysqli_query($conn,"Select * from  residental where page_name= '1'");
                while($arr=mysqli_fetch_array($sql)){
               ?>
               <div class="row">
@@ -287,30 +287,7 @@ include('include/config.php');
                 <div class="col-lg-6">
 
                   <div id="page-slider" class="page-slider small-bg">
-
-                    <div class="item" style="background-image:url(images/slider-pages/5.webp)">
-                      <div class="container">
-                        <div class="listing-badges">
-                          <span style="" class="featured">Featured</span>
-                        </div>
-                        <div class="price-box" ><span href="contact.php" class="rent">Contact For Price</span>
-                        </div>
-
-                      </div>
-                    </div><!-- Item 1 end -->
-
-                    <div class="item" style="background-image:url(images/slider-pages/3.webp)">
-                      <div class="container">
-                        <div class="listing-badges">
-                          <span style="" class="featured">Featured</span>
-                        </div>
-                        <div class="price-box" ><span href="contact.php" class="rent">Contact For Price</span>
-                        </div>
-
-                      </div>
-                    </div><!-- Item 1 end -->
-
-                    <div class="item" href="contact.php" style="background-image:url(images/slider-pages/6.webp)">
+                    <div class="item" href="contact.php" style="background-image:url(admin/dist/img/credit/<?php echo $arr['image'];?>)">
                       <div class="container">
                         <div class="listing-badges">
                           <span style="" class="featured">Featured</span>
@@ -326,7 +303,7 @@ include('include/config.php');
                 </div>
                 <div class="col-lg-6">
                   <h3 class="column-title"><?php echo $arr['name']?></h3>
-                  <p><?php echo $arr['description']?>
+                  <p><?php echo $arr['content']?>
                   </p>
 
                 </div>
@@ -337,7 +314,7 @@ include('include/config.php');
           </div>
           <div class="shadow p-3 mb-5 bg-white rounded">
             <?php
-              $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor2'");
+              $sql=mysqli_query($conn,"Select * from  residental where page_name= '2'");
                while($arr=mysqli_fetch_array($sql)){
             ?>
             <div class="row">
@@ -346,7 +323,7 @@ include('include/config.php');
 
                 <div id="page-slider" class="page-slider small-bg">
 
-                  <div class="item" style="background-image:url(images/slider-pages/1.webp)">
+                  <div class="item" style="background-image:url(admin/dist/img/credit/<?php echo $arr['image'];?>)">
                     <div class="container">
                       <div class="listing-badges">
                         <span style="" class="featured">Featured</span>
@@ -357,34 +334,13 @@ include('include/config.php');
                     </div>
                   </div><!-- Item 1 end -->
 
-                  <div class="item" style="background-image:url(images/slider-pages/4.webp)">
-                    <div class="container">
-                      <div class="listing-badges">
-                        <span style="" class="featured">Featured</span>
-                      </div>
-                      <div class="price-box" href="contact.php"><span class="rent">Contact For Price</span>
-                      </div>
-
-                    </div>
-                  </div><!-- Item 1 end -->
-
-                  <div class="item" style="background-image:url(images/slider-pages/6.webp)">
-                    <div class="container">
-                      <div class="listing-badges">
-                        <span style="" class="featured">Featured</span>
-                      </div>
-                      <div class="price-box" href="contact.php"><span class="rent">Contact For Price</span>
-                      </div>
-
-                    </div>
-                  </div><!-- Item 1 end -->
                 </div><!-- Page slider end-->
 
 
               </div>
               <div class="col-lg-6 col-md-12">
                 <h3 class="column-title"><?php echo $arr['name']?></h3>
-                <p><?php echo $arr['description']?>
+                <p><?php echo $arr['content']?>
                 </p>
 
               </div>
@@ -393,7 +349,7 @@ include('include/config.php');
           </div>
           <div class="shadow p-3 mb-5 bg-white rounded">
             <?php
-              $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor2'");
+              $sql=mysqli_query($conn,"Select * from  residental where page_name= '3'");
                while($arr=mysqli_fetch_array($sql)){
             ?>
             <div class="row">
@@ -402,29 +358,7 @@ include('include/config.php');
 
                 <div id="page-slider" class="page-slider small-bg">
 
-                  <div class="item" style="background-image:url(images/slider-pages/2.webp)">
-                    <div class="container">
-                      <div class="listing-badges">
-                        <span style="" class="featured">Featured</span>
-                      </div>
-                      <div class="price-box" href="contact.php"><span class="rent">Contact For Price</span>
-                      </div>
-
-                    </div>
-                  </div><!-- Item 1 end -->
-
-                  <div class="item" style="background-image:url(images/slider-pages/3.webp)">
-                    <div class="container">
-                      <div class="listing-badges">
-                        <span style="" class="featured">Featured</span>
-                      </div>
-                      <div class="price-box" href="contact.php"><span class="rent">Contact For Price</span>
-                      </div>
-
-                    </div>
-                  </div><!-- Item 1 end -->
-
-                  <div class="item" style="background-image:url(images/slider-pages/4.webp)">
+                  <div class="item" style="background-image:url(admin/dist/img/credit/<?php echo $arr['image'];?>)">
                     <div class="container">
                       <div class="listing-badges">
                         <span style="" class="featured">Featured</span>
@@ -440,7 +374,7 @@ include('include/config.php');
               </div>
               <div class="col-lg-6 col-md-12">
                 <h3 class="column-title"><?php echo $arr['name']?></h3>
-                <p><?php echo $arr['description']?>
+                <p><?php echo $arr['content']?>
                 </p>
 
               </div>
@@ -449,7 +383,7 @@ include('include/config.php');
           </div>
           <div class="shadow p-3 mb-5 bg-white rounded">
             <?php
-              $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor2'");
+              $sql=mysqli_query($conn,"Select * from  residental where page_name= '4'");
                while($arr=mysqli_fetch_array($sql)){
             ?>
             <div class="row">
@@ -458,22 +392,7 @@ include('include/config.php');
 
                 <div id="page-slider" class="page-slider small-bg">
 
-                  <div class="item" style="background-image:url(images/slider-pages/1.webp)">
-                    <div class="container">
-                      <div class="listing-badges">
-                        <span style="" class="featured">Featured</span>
-                      </div>
-                      <div class="price-box" href="contact.php"><span class="rent">Contact For Price</span>
-                      </div>
-                      <div class="box-slider-content">
-                        <div class="box-slider-text">
-                          <h2 class="box-slide-title">Leadership</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- Item 1 end -->
-
-                  <div class="item" style="background-image:url(images/slider-pages/2.webp)">
+                  <div class="item" style="background-image:url(admin/dist/img/credit/<?php echo $arr['image'];?>)">
                     <div class="container">
                       <div class="listing-badges">
                         <span style="" class="featured">Featured</span>
@@ -484,23 +403,13 @@ include('include/config.php');
                     </div>
                   </div><!-- Item 1 end -->
 
-                  <div class="item" style="background-image:url(images/slider-pages/6.webp)">
-                    <div class="container">
-                      <div class="listing-badges">
-                        <span style="" class="featured">Featured</span>
-                      </div>
-                      <div class="price-box" href="contact.php"><span class="rent">Contact For Price</span>
-                      </div>
-
-                    </div>
-                  </div><!-- Item 1 end -->
                 </div><!-- Page slider end-->
 
 
               </div>
               <div class="col-lg-6 col-md-12">
                 <h3 class="column-title"><?php echo $arr['name']?></h3>
-                <p><?php echo $arr['description']?>
+                <p><?php echo $arr['content']?>
                 </p>
 
               </div>
@@ -509,7 +418,7 @@ include('include/config.php');
           </div>
           <div class="shadow p-3 mb-5 bg-white rounded">
             <?php
-              $sql=mysqli_query($conn,"Select * from  testimonials where page_name= 'instructor2'");
+              $sql=mysqli_query($conn,"Select * from  residental where page_name= '5'");
                while($arr=mysqli_fetch_array($sql)){
             ?>
             <div class="row">
@@ -518,7 +427,7 @@ include('include/config.php');
 
                 <div id="page-slider" class="page-slider small-bg">
 
-                  <div class="item" style="background-image:url(images/slider-pages/2.webp)">
+                  <div class="item" style="background-image:url(admin/dist/img/credit/<?php echo $arr['image'];?>)">
                     <div class="container">
                       <div class="listing-badges">
                         <span style="" class="featured">Featured</span>
@@ -529,34 +438,13 @@ include('include/config.php');
                     </div>
                   </div><!-- Item 1 end -->
 
-                  <div class="item" style="background-image:url(images/slider-pages/4.webp)">
-                    <div class="container">
-                      <div class="listing-badges">
-                        <span style="" class="featured">Featured</span>
-                      </div>
-                      <div class="price-box" href="contact.php"><span class="rent">Contact For Price</span>
-                      </div>
-
-                    </div>
-                  </div><!-- Item 1 end -->
-
-                  <div class="item" style="background-image:url(images/slider-pages/6.webp)">
-                    <div class="container">
-                      <div class="listing-badges">
-                        <span style="" class="featured">Featured</span>
-                      </div>
-                      <div class="price-box" href="contact.php"><span class="rent">Contact For Price</span>
-                      </div>
-
-                    </div>
-                  </div><!-- Item 1 end -->
                 </div><!-- Page slider end-->
 
 
               </div>
               <div class="col-lg-6 col-md-12">
                 <h3 class="column-title"><?php echo $arr['name']?></h3>
-                <p><?php echo $arr['description']?>
+                <p><?php echo $arr['content']?>
                 </p>
 
               </div>

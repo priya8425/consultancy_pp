@@ -123,6 +123,7 @@ if(isset($_POST['submit'])){
 
       <section id="main-container" class="main-container">
          <div class="container">
+            
             <div class="col-lg-12">
                <h3 class="column-title" style="margin-top:5%">Legal Assistance</h3>
                <p>We offer a complete range of property related legal services that cover both residential and commercial properties. Using our 20 years experience in the real estate industry, our legal team is always in a strong position to provide legal advice regarding infrastructural and building projects, solving dispute and any documents related problems. You can feel free to talk to our legal consultant anytime and get legal advice on property matters of purchase/lease, taxation, legal disputes etc.</p>
