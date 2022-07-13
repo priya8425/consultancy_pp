@@ -52,12 +52,14 @@ if(isset($_POST["login"])){
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition login-page">
+
 <div class="login-box">
+<div class="card-body card card-primary" style="height:330px;">
   <div class="login-logo">
-    <a href="../../../index.php"><b>Tectignis</b>University</a>
+    <a href="../../../index.php"><b>PP</b>Consultancy</a>
   </div>
   <!-- /.login-logo -->
-  <div class="card">
+  
     <div class="card-body login-card-body">
      
 
@@ -94,7 +96,8 @@ if(isset($_POST["login"])){
      
     </div>
     <!-- /.login-card-body -->
-  </div>
+  
+</div>
 </div>
 <!-- /.login-box -->
 
