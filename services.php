@@ -90,7 +90,7 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                    <li class="breadcrumb-item"><a href="services.php">Services</a></li>
+                    
                     <li class="breadcrumb-item active" aria-current="page">All Services</li>
                   </ol>
                 </nav>
@@ -283,9 +283,37 @@
               </div>
             </div><!-- Service3 end -->
           </div>
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="ts-service-box">
-              <div class="ts-service-image-wrappergit config –global http.version HTTP/1.1 
+          <?php include("include/footer.php");?>
+      <!-- Footer end -->
+
+      <!-- Javascript Files
+  ================================================== -->
+
+      <!-- initialize jQuery Library -->
+      <script src="plugins/jQuery/jquery.min.js"></script>
+      <!-- Bootstrap jQuery -->
+      <script src="plugins/bootstrap/bootstrap.min.js" defer></script>
+      <!-- Slick Carousel -->
+      <script src="plugins/slick/slick.min.js"></script>
+      <script src="plugins/slick/slick-animation.min.js"></script>
+      <!-- Color box -->
+      <script src="plugins/colorbox/jquery.colorbox.js"></script>
+      <!-- shuffle -->
+      <script src="plugins/shuffle/shuffle.min.js" defer></script>
+
+
+      <!-- Google Map API Key-->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
+      <!-- Google Map Plugin-->
+      <script src="plugins/google-map/map.js" defer></script>
+
+      <!-- Template custom -->
+      <script src="js/script.js"></script>
+
+   </div><!-- Body inner end -->
+</body>
+
+</html>
 
 
               

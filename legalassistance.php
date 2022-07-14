@@ -109,8 +109,8 @@ if(isset($_POST['submit'])){
                         <h1 class="banner-title" style="color:#ffb600;">Legal Assistance</h1>
                         <nav aria-label="breadcrumb">
                            <ol class="breadcrumb justify-content-center">
-                              <li class="breadcrumb-item"><a href="#">Home</a></li>
-                              <li class="breadcrumb-item"><a href="#">Company</a></li>
+                              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                             
                               <li class="breadcrumb-item active" aria-current="page">Legal Assistance</li>
                            </ol>
                         </nav>

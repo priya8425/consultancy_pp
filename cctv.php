@@ -96,8 +96,8 @@ include('include/config.php');
                 <h1 class="banner-title" style="color:#ffb600">CCTV Installation</h1>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Services</a></li>
+                  <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="services.php">Services</a></li>
                     <li class="breadcrumb-item active" aria-current="page">CCTV Installation</li>
                   </ol>
                 </nav>
