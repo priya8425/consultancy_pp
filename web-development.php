@@ -1,5 +1,19 @@
-<?php 
+<?php
 include('include/config.php');
+if(isset($_POST['submit'])){
+   $name=$_POST['name'];
+   $mobile=$_POST['mobile'];
+   $email=$_POST['email'];
+   $description=$_POST['description']; 
+   $page_name='web-development';
+   $sql="INSERT INTO `get_a_qoute`(`name`, `mobile`, `email`, `description`, `page_name`) VALUES ('$name','$mobile','$email','$description','$page_name')";
+   if(mysqli_query($conn,$sql)){
+      echo"<script> alert ('new record has been added succesfully!'); </script>";
+   }
+   else{
+      echo"<script> alert ('connection failed!'); </script>";
+   }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -71,9 +85,7 @@ include('include/config.php');
                 <a title="Instagram" href="https://instagram.com/themefisher.com">
                   <span class="social-icon"><i class="fab fa-instagram"></i></span>
                 </a>
-                <a title="Linkdin" href="https://github.com/themefisher.com">
-                  <span class="social-icon"><i class="fab fa-github"></i></span>
-                </a>
+               
               </li>
             </ul>
           </div>
@@ -96,8 +108,8 @@ include('include/config.php');
                 <h1 class="banner-title" style="color:#ffb600">Web Development</h1>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Services</a></li>
+                  <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="services.php">Services</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Web Development</li>
                   </ol>
                 </nav>
@@ -119,14 +131,14 @@ include('include/config.php');
                 <ul class="nav service-menu">
                   <li><a href="e-marketing.php">E-Marketing Vendor</a></li>
                   <li><a href="real-estate.php">Real Estate</a></li>
-                  <li><a href="home-loan.php">Home Loan</a></li>
+                  <li class="active"><a href="home-loan.php">Home Loan</a></li>
                   <li><a href="registration.php">Registration</a></li>
                   <li><a href="architect-service.php">Architect Services- Drawing & Planning</a></li>
                   <li><a href="civil-constructor.php">Civil Constructor</a></li>
                   <li><a href="iso-certificate.php">ISO Certification</a></li>
                   <li><a href="medical-checkup.php">Medical Health Checkup</a></li>
                   <li><a href="cctv.php">CCTV Installation</a></li>
-                  <li class="active"><a href="web-development.php">Web Development</a></li>
+                  <li><a href="web-development.php">Web Development</a></li>
 
                 </ul>
               </div><!-- Widget end -->
@@ -156,7 +168,7 @@ include('include/config.php');
 
 
               <div class="course-img">
-                <img src="admin/dist/img/credit/<?php echo $arr['image'];?>" style="height: 250px; width: 500px; ">
+                <img src="admin/dist/img/credit/<?php echo $arr['image'];?>" style="height: 400px; width: 722px; ">
               </div>
 
             </div><!-- Page slider end -->
@@ -164,7 +176,7 @@ include('include/config.php');
             <div class="gap-40"></div>
 
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <h3><?php echo $arr['description_name']?></h3>
                 <p><?php echo $arr['description']?></p>
 
@@ -214,23 +226,25 @@ include('include/config.php');
         <!-- Modal body -->
         <div class="modal-body">
           <div class="container mt-3">
-            <form action="/action_page.php">
+            <form action="" method="post">
               <div class="row">
                 <div class=" col-sm-6 mb-3 ">
-                  <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                  <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
                 </div>
                 <div class="col-sm-6 mb-3 ">
                   <input type="number" class="form-control" id="number" placeholder="Enter Mobile" name="mobile"
-                    min="10" max="10">
+                  required>
                 </div>
               </div>
+              <div class="row">
               <div class="mb-3 mt-3">
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"required>
               </div>
               <div class="mb-3 mt-3">
-                <textarea class="form-control" rows="5" id="comment" placeholder="Comments" name="text"></textarea>
+                <textarea class="form-control" rows="5" id="comment" placeholder="Comments" name="description"></textarea>
               </div>
-              <button type="submit"  style ="width:100%" class="btn btn-primary">Submit</button>
+              </div>
+              <button type="submit" name="submit" style ="width:100%" class="btn btn-primary">Submit</button>
             </form>
           </div>
         </div>
@@ -239,7 +253,6 @@ include('include/config.php');
       </div>
     </div>
   </div>
-
 
 
   <?php include("include/footer.php");?>

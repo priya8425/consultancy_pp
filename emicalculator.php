@@ -89,7 +89,7 @@
                         <h1 class="banner-title" style="color:#ffb600;">EMI Calculator</h1>
                         <nav aria-label="breadcrumb">
                            <ol class="breadcrumb justify-content-center">
-                              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                              <li class="breadcrumb-item"><a href="#">Home</a></li>
                               <li class="breadcrumb-item"><a href="#">company</a></li>
                               <li class="breadcrumb-item active" aria-current="page">EMI Calculator</li>
                            </ol>
@@ -201,7 +201,8 @@
                }
 
                table#emi td {
-                  padding: 5px;
+                  padding: 1%;
+                  
                }
 
                table#emi tr:nth-child(even) {
@@ -216,8 +217,7 @@
                }
 
                table#emi input {
-                  margin-bottom: 5px !important;
-                  margin-top: 5px;
+                  margin: 3%;
                }
 
                #result td {
@@ -247,9 +247,9 @@
                <table id="emi" width="100%">
                   <tr>
                      <td colspan="3">
-                        <b>
+                        <h4>
                            Enter Loan Information:
-                        </b>
+                           </h4>
                      </td>
                   </tr>
                   <tr>
@@ -301,7 +301,7 @@
                   </tr>
                   <tr>
                      <td colspan="3">
-                        <input type="submit" value="Compute" name="EMI_submit" class="btn btn-primary">
+                        <input type="submit" value="Calculate" name="EMI_submit" class="btn btn-primary col-sm-3">
                      </td>
                   </tr>
                </table>

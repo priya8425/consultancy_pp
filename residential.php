@@ -229,12 +229,8 @@ include('include/config.php');
                 <a title="Twitter" href="https://twitter.com/themefisher.com">
                   <span class="social-icon"><i class="fab fa-twitter"></i></span>
                 </a>
-                <a title="Instagram" href="https://instagram.com/themefisher.com">
-                  <span class="social-icon"><i class="fab fa-instagram"></i></span>
-                </a>
-                <a title="Linkdin" href="https://github.com/themefisher.com">
-                  <span class="social-icon"><i class="fab fa-github"></i></span>
-                </a>
+                
+               
               </li>
             </ul>
           </div>
@@ -454,7 +450,7 @@ include('include/config.php');
         </section>
         <section id="" class="col-sm-3">
           <div class="">
-            <div class="container  shadow p-3 mb-5 bg-white rounded" style="height: 362px;">
+            <div class="container  shadow p-3 mb-5 bg-white rounded" style="height: 362px; width: 400px;">
               <div class="">
                 <div class="">
                   <form action="/action_page.php">
@@ -523,7 +519,7 @@ include('include/config.php');
 
             </div>
           </div>
-          <div class="widget recent-properties container  shadow p-3 mb-5 bg-white rounded" style="margin-top:-21%">
+          <div class="widget recent-properties container  shadow p-3 mb-5 bg-white rounded" style="margin-top:-21%; width: 400px;"  >
             <h3 class="sidebar-title" style="font-size:20px;text-align:center; margin-bottom: 10%;">Recent Properties
             </h3>
             <div class="s-border"></div>
@@ -584,7 +580,7 @@ include('include/config.php');
               </div>
             </div>
           </div>
-          <div class="posts-by-category widget container shadow p-3 mb-5 bg-white rounded" style="margin-top:-13%">
+          <div class="posts-by-category widget container shadow p-3 mb-5 bg-white rounded" style="margin-top:-13%; width:400px;">
             <h3 class="sidebar-title" style="font-size:20px;text-align:center;margin-bottom: 10%;">Category</h3>
             <div class="s-border"></div>
             <ul class="list-unstyled list-cat">
@@ -594,7 +590,7 @@ include('include/config.php');
               <li><a href="properties-list.php?p_type=Villa">Villa</a></li>
             </ul>
           </div>
-          <div class="container shadow p-3 mb-5 bg-white rounded" style="margin-top: -13%;">
+          <div class="container shadow p-3 mb-5 bg-white rounded" style="margin-top: -13%; width: 400px;">
             <div class="p-20">
               <h3 class="sidebar-title" style="text-align:center;margin-bottom:10%">Our Offices</h3>
               <div class="s-border"></div>

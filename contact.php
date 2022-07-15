@@ -104,9 +104,7 @@ echo "not done";
                 <a title="Instagram" href="https://instagram.com/themefisher.com">
                   <span class="social-icon"><i class="fab fa-instagram"></i></span>
                 </a>
-                <a title="Linkdin" href="https://github.com/themefisher.com">
-                  <span class="social-icon"><i class="fab fa-github"></i></span>
-                </a>
+                
               </li>
             </ul>
           </div>
