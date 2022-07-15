@@ -1,6 +1,33 @@
-<?php 
-include('include/config.php');
+<?php
+include("include/config.php");
+if(isset($_POST['submit'])){
 
+  $Email = $_POST['email'];
+ 
+  
+$from = 'Enquiry <yadavpriya1425@gmail.com>' . "\r\n";
+$sendTo = 'Enquiry <maheshniwate10@gmail.com>';
+$subject = 'Enquiry';
+
+$fields = array('email' => 'email');
+
+try{
+  $emailText = "You have new message from contact form\n=============================\n";
+foreach($_POST as $key => $value){
+if(isset($fields[$key])){
+  $emailText.="$fields[$key]: $value\n";
+}
+}
+if( mail($sendTo,$subject,$emailText, "From:" .$from)){
+}else{
+echo "eeee $sendTo $subject $emailText $from";
+}
+}
+catch(\Exception $e){
+echo "not done";
+}
+
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -719,7 +746,7 @@ include('include/config.php');
               </div>
 
               <div class="col-md-7 newsletter-form">
-                <form class="row" action="#" method="post">
+                <form class="row" action="" method="post">
                   <div class="form-group ">
                     <label for="newsletter-email" class="content-hidden">Newsletter Email</label>
                     <input type="email" name="email" id="newsletter-email" class="form-control form-control-lg"
@@ -727,7 +754,7 @@ include('include/config.php');
                   </div>
                   <div class="form-group" style="margin-left:10%">
                     <button style="border-radius:10%" class="btn btn-primary solid blank checkValidationBtn"
-                      type="submit" id="button_submit">Submit</button>
+                      type="submit" name="submit" id="button_submit">Submit</button>
                   </div>
                 </form>
               </div>
