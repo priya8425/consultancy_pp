@@ -64,9 +64,7 @@
                         <a title="Instagram" href="https://instagram.com/themefisher.com">
                            <span class="social-icon"><i class="fab fa-instagram"></i></span>
                         </a>
-                        <a title="Linkdin" href="https://github.com/themefisher.com">
-                           <span class="social-icon"><i class="fab fa-github"></i></span>
-                        </a>
+                       
                      </li>
                   </ul>
                </div>
@@ -90,7 +88,7 @@
                         <nav aria-label="breadcrumb">
                            <ol class="breadcrumb justify-content-center">
                               <li class="breadcrumb-item"><a href="#">Home</a></li>
-                              <li class="breadcrumb-item"><a href="#">company</a></li>
+                            
                               <li class="breadcrumb-item active" aria-current="page">EMI Calculator</li>
                            </ol>
                         </nav>
@@ -194,7 +192,7 @@
                ?>
             <style type="text/css">
                table#emi {
-                  border: 1px solid #d4d4d4;
+                 
                   margin: 0 auto;
                   font-family: 'Cantora One', sans-serif;
                   font-size: 14px;
@@ -206,14 +204,14 @@
                }
 
                table#emi tr:nth-child(even) {
-                  background: #E4E4E4;
-                  border: 1px solid #D4D4D4;
+                 
+                  border: 1px solid ;
                   border-left: 0;
                   border-right: 0;
                }
 
                table#emi tr td:nth-last-child(1) {
-                  background: #D7E4FF;
+                  background: white;
                }
 
                table#emi input {
@@ -226,7 +224,7 @@
 
                table#result {
                   width: 477px;
-                  border: 1px solid #d4d4d4;
+                 
                   margin: 0 auto;
                   margin-top: 10px;
                   display: none;
@@ -235,7 +233,7 @@
                }
 
                table#result tr:nth-child(even) {
-                  background: #E4E4E4;
+                  background: #D7E4FF;
                   border: 1px solid #D4D4D4;
                }
 
@@ -261,7 +259,7 @@
                         <span class="err">*</span>
                      </td>
                      <td>
-                        <input type="text" name="principal" size="12">
+                        <input type="text" name="principal" size="20">
                      </td>
                   </tr>
                   <tr>
@@ -273,7 +271,7 @@
                         <span class="err">*</span>
                      </td>
                      <td>
-                        <input type="text" name="interest" size="12">
+                        <input type="text" name="interest" size="20">
                      </td>
                   </tr>
                   <tr>
@@ -285,7 +283,7 @@
                         <span class="err">*</span>
                      </td>
                      <td>
-                        <input type="text" name="years" size="12">
+                        <input type="text" name="years" size="20">
                      </td>
                   </tr>
                   <tr>
@@ -296,7 +294,7 @@
                         Start Date of Loan:
                      </td>
                      <td>
-                        <input type="text" name="start_date" size="12" id="start_date">
+                        <input type="text" name="start_date" size="20" id="start_date">
                      </td>
                   </tr>
                   <tr>
@@ -308,7 +306,7 @@
             </form>
             <style type="text/css">
                .eni_list {
-                  border: 1px solid #D4D4D4;
+                
                }
 
                .eni_list tr:nth-child(2) {
@@ -318,12 +316,12 @@
 
                .eni_list td {
                   padding: 5px;
-                  border: 1px solid #D5D5D5;
+                
                   text-align: center;
                }
 
                .eni_list tr:nth-child(even) {
-                  background: #E4E4E4;
+                  background: #D7E4FF;
                }
 
                span.err {

@@ -354,12 +354,14 @@ if(isset($_POST['submit'])){
                   <?php echo $arr['description']?>
                 </span>
 
-                <div class="quote-item-footer" style="margin-left:25%">
-                  <img loading="lazy" class="testimonial-thumb" src="admin/dist/img/credit/<?php echo $arr['image'];?>"
-                    alt="testimonial">
+                <div class="quote-item-footer" >
+                  
                   <div class="quote-item-info">
+                  <img loading="lazy" class="testimonial-thumb" style="margin-left:30px;" src="admin/dist/img/credit/<?php echo $arr['image'];?>"
+                    alt="testimonial">
                     <h3 class="quote-author"><?php echo $arr['name']?></h3>
-                    <span class="quote-subtext"><?php echo $arr['about']?></span>
+                    <h3 class="quote-author"><?php echo $arr['about']?></h3>
+                   
                   </div>
                 </div>
               </div><!-- Quote item end -->
@@ -399,9 +401,10 @@ if(isset($_POST['submit'])){
                 </span>
 
                 <div class="quote-item-footer" style="margin-left:25%">
+                  
+                  <div class="quote-item-info">
                   <img loading="lazy" class="testimonial-thumb" src="admin/dist/img/credit/<?php echo $arr['image'];?>"
                     alt="testimonial">
-                  <div class="quote-item-info">
                     <h3 class="quote-author"><?php echo $arr['name']?></h3>
                     <span class="quote-subtext"><?php echo $arr['about']?></span>
                   </div>

@@ -131,8 +131,8 @@ if(isset($_POST['submit'])){
                 <ul class="nav service-menu">
                   <li><a href="e-marketing.php">E-Marketing Vendor</a></li>
                   <li><a href="real-estate.php">Real Estate</a></li>
-                  <li class="active"><a href="home-loan.php">Home Loan</a></li>
-                  <li><a href="registration.php">Registration</a></li>
+                  <li><a href="home-loan.php">Home Loan</a></li>
+                  <li class="active"><a href="registration.php">Registration</a></li>
                   <li><a href="architect-service.php">Architect Services- Drawing & Planning</a></li>
                   <li><a href="civil-constructor.php">Civil Constructor</a></li>
                   <li><a href="iso-certificate.php">ISO Certification</a></li>

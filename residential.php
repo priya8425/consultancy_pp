@@ -449,77 +449,8 @@ include('include/config.php');
           </div>
         </section>
         <section id="" class="col-sm-3">
-          <div class="">
-            <div class="container  shadow p-3 mb-5 bg-white rounded" style="height: 362px; width: 400px;">
-              <div class="">
-                <div class="">
-                  <form action="/action_page.php">
-                    <h4 style="text-align:center">Advanced Search</h4>
-                    <div style="margin-top:4%" class="dropdown">
-                      <select style="width:100%; margin-top:2%;" class="btn btn-white button" name="" id="">
-                        <option class="" value="">Any Status</option>
-                        <option class="" value="">For Rent</option>
-                        <option class="" value="">For Sale</option>
-                      </select>
-                    </div>
-                    <div style="" class="dropdown">
-                      <select style="width:100%; margin-top:2%;" class="btn btn-white button" name="" id="">
-                        <option class="" value="">All Types</option>
-                        <option class="" value="">Apartment</option>
-                        <option class="" value="">Shop</option>
-                        <option class="" value="">Restaurant</option>
-                        <option class="" value="">Villa</option>
-                      </select>
-                    </div>
-                    <div style="" class="dropdown">
-                      <select style="width:100%; margin-top:2%;" class="btn btn-white button" name="" id="">
-                        <option value="" selected>Location</option>
-                        <option value="Kharghar">Kharghar</option>
-                        <option value="Airoli">Airoli</option>
-                        <option value="Ulwe">Ulwe</option>
-                        <option value="Panvel">Panvel</option>
-                        <option value="Khandala">Khandala</option>
-                        <option value="Nerul">Nerul</option>
-                        <option value="Ghansoli">Ghansoli</option>
-                        <option value="Vashi">Vashi</option>
-                        <option value="Taloja">Taloja</option>
-                        <option value="Sanpada">Sanpada</option>
-                        <option value="Dronagiri">Dronagiri</option>
-                        <option value="Uran">Uran</option>
-                        <option value="CBD Belapur">CBD Belapur</option>
-                        <option value="Turbhe">Turbhe</option>
-                        <option value="Kopar Khairane">Kopar Khairane</option>
-                        <option value="Pune">Pune</option>
-                        <option value="Shilphata">Shilphata</option>
-                        <option value="Navi Mumbai">Navi Mumbai</option>
-                        <option value="any">any</option>
-                        <option value="Lonavala">Lonavala</option>
-                        <option value="Thane">Thane</option>
-                        <option value="Seawoods">Seawoods</option>
-                        <option value="Dombivli">Dombivli</option>
-                      </select>
-                    </div>
-
-                    <select style="width:100%; margin-top:2%;" class=" btn btn-white button " name="cars" id="cars">
-                      <option value="">Bedrooms</option>
-                      <option vlaue="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select>
-
-                    <div style="margin-top:2%">
-                      <button type="search" style="width:100%" class="btn btn-primary">Search</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="container col-sm-3">`
-
-            </div>
-          </div>
-          <div class="widget recent-properties container  shadow p-3 mb-5 bg-white rounded" style="margin-top:-21%; width: 400px;"  >
+          
+          <div class="widget recent-properties container  shadow p-3 mb-5 bg-white rounded" style="width: 400px;"  >
             <h3 class="sidebar-title" style="font-size:20px;text-align:center; margin-bottom: 10%;">Recent Properties
             </h3>
             <div class="s-border"></div>
@@ -580,7 +511,7 @@ include('include/config.php');
               </div>
             </div>
           </div>
-          <div class="posts-by-category widget container shadow p-3 mb-5 bg-white rounded" style="margin-top:-13%; width:400px;">
+          <div class="posts-by-category widget container shadow p-3 mb-5 bg-white rounded" style=" width:400px;">
             <h3 class="sidebar-title" style="font-size:20px;text-align:center;margin-bottom: 10%;">Category</h3>
             <div class="s-border"></div>
             <ul class="list-unstyled list-cat">
@@ -590,7 +521,7 @@ include('include/config.php');
               <li><a href="properties-list.php?p_type=Villa">Villa</a></li>
             </ul>
           </div>
-          <div class="container shadow p-3 mb-5 bg-white rounded" style="margin-top: -13%; width: 400px;">
+          <div class="container shadow p-3 mb-5 bg-white rounded" style=" width: 400px;">
             <div class="p-20">
               <h3 class="sidebar-title" style="text-align:center;margin-bottom:10%">Our Offices</h3>
               <div class="s-border"></div>
@@ -632,149 +563,6 @@ include('include/config.php');
         </section>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Facts end -->
-
-    <!--<section id="ts-team" class="ts-team">-->
-    <!--  <div class="container">-->
-    <!--    <div class="row text-center">-->
-    <!--        <div class="col-lg-12">-->
-    <!--          <h2 class="section-title">Quality Service</h2>-->
-    <!--          <h3 class="section-sub-title">Professional Team</h3>-->
-    <!--        </div>-->
-    <!--    </div><!--/ Title row end -->
-
-    <!--    <div class="row">-->
-    <!--        <div class="col-lg-12">-->
-    <!--          <div id="team-slide" class="team-slide">-->
-    <!--              <div class="item">-->
-    <!--                <div class="ts-team-wrapper">-->
-    <!--                    <div class="team-img-wrapper">-->
-    <!--                      <img loading="lazy" class="w-100" src="images/team/team1.webp" alt="team-img">-->
-    <!--                    </div>-->
-    <!--                    <div class="ts-team-content">-->
-    <!--                      <h3 class="ts-name">Stenman scre</h3>-->
-    <!--                      <p class="ts-designation">Operating</p>-->
-    <!--                      <p class="ts-description">Stenman began his career in construction with boots on the ground</p>-->
-    <!--                      <div class="team-social-icons">-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>-->
-    <!--                      </div><!--/ social-icons-->
-    <!--                    </div>-->
-    <!--                </div><!--/ Team wrapper end -->
-    <!--              </div><!-- Team 1 end -->
-
-    <!--              <div class="item">-->
-    <!--                <div class="ts-team-wrapper">-->
-    <!--                    <div class="team-img-wrapper">-->
-    <!--                      <img loading="lazy" class="w-100" src="images/team/team2.webp" alt="team-img">
-<!--                    </div>-->
-    <!--                    <div class="ts-team-content">-->
-    <!--                      <h3 class="ts-name">Angela loqu</h3>-->
-    <!--                      <p class="ts-designation">Innovation Officer</p>-->
-    <!--                      <p class="ts-description">Angela began his career in construction with boots on the ground</p>-->
-    <!--                      <div class="team-social-icons">-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>-->
-    <!--                      </div><!--/ social-icons-->
-    <!--                    </div>-->
-    <!--                </div><!--/ Team wrapper end -->
-    <!--              </div><!-- Team 2 end -->
-
-    <!--              <div class="item">-->
-    <!--                <div class="ts-team-wrapper">-->
-    <!--                    <div class="team-img-wrapper">-->
-    <!--                      <img loading="lazy" class="w-100" src="images/team/team3.webp" alt="team-img">-->
-    <!--                    </div>-->
-    <!--                    <div class="ts-team-content">-->
-    <!--                      <h3 class="ts-name">Mark Stev</h3>-->
-    <!--                      <p class="ts-designation">Safety Officer</p>-->
-    <!--                      <p class="ts-description">Stev began his career in construction with boots on the ground</p>-->
-    <!--                      <div class="team-social-icons">-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>-->
-    <!--                      </div><!--/ social-icons-->
-    <!--                    </div>-->
-    <!--                </div><!--/ Team wrapper end -->
-    <!--              </div><!-- Team 3 end -->
-
-    <!--              <div class="item">-->
-    <!--                <div class="ts-team-wrapper">-->
-    <!--                    <div class="team-img-wrapper">-->
-    <!--                      <img loading="lazy" class="w-100" src="images/team/team4.webp" alt="team-img">-->
-    <!--                    </div>-->
-    <!--                    <div class="ts-team-content">-->
-    <!--                      <h3 class="ts-name">Ayesha Stenk</h3>-->
-    <!--                      <p class="ts-designation">Finance Officer</p>-->
-    <!--                      <p class="ts-description">Ayesha began his career in construction with boots on the ground</p>-->
-    <!--                      <div class="team-social-icons">-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>-->
-    <!--                      </div><!--/ social-icons-->
-    <!--                    </div>-->
-    <!--                </div><!--/ Team wrapper end -->
-    <!--              </div><!-- Team 4 end -->
-
-    <!--              <div class="item">-->
-    <!--                <div class="ts-team-wrapper">-->
-    <!--                    <div class="team-img-wrapper">-->
-    <!--                      <img loading="lazy" class="w-100" src="images/team/team5.webp" alt="team-img">-->
-    <!--                    </div>-->
-    <!--                    <div class="ts-team-content">-->
-    <!--                      <h3 class="ts-name">Dave Clark</h3>-->
-    <!--                      <p class="ts-designation">Civil Engineer</p>-->
-    <!--                      <p class="ts-description">Clark began his career in construction with boots on the ground</p>-->
-    <!--                      <div class="team-social-icons">-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>-->
-    <!--                      </div><!--/ social-icons-->
-    <!--                    </div>-->
-    <!--                </div><!--/ Team wrapper end -->
-    <!--              </div><!-- Team 5 end -->
-
-    <!--              <div class="item">-->
-    <!--                <div class="ts-team-wrapper">-->
-    <!--                    <div class="team-img-wrapper">-->
-    <!--                      <img loading="lazy" class="w-100" src="images/team/team6.webp" alt="team-img">-->
-    <!--                    </div>-->
-    <!--                    <div class="ts-team-content">-->
-    <!--                      <h3 class="ts-name">Elton Joe</h3>-->
-    <!--                      <p class="ts-designation">Site operator</p>-->
-    <!--                      <p class="ts-description">joe began his career in construction with boots on the ground</p>-->
-    <!--                      <div class="team-social-icons">-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>-->
-    <!--                          <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>-->
-    <!--                      </div><!--/ social-icons-->
-    <!--                    </div>-->
-    <!--                </div><!--/ Team wrapper end -->
-    <!--              </div><!-- Team 6 end -->
-
-    <!--          </div><!-- Team slide end -->
-    <!--        </div>-->
-    <!--    </div><!--/ Content row end -->
-    <!--  </div><!--/ Container end -->
-    <!--</section><!--/ Team end -->
 
     <?php include("include/footer.php");?>
     <!-- Footer end -->

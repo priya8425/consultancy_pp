@@ -198,15 +198,11 @@ echo "not done";
         </div>
 
         <div class="gap-5"></div>
-
+        <div class="container">
         <div class="google-map">
-          <iframe id="map" class="map" style="width:100%;" data-marker-name="PP Consultancy"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.127548140075!2d73.10040851421175!3d19.014100458857854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e83322251e19%3A0xd4f13e10f505bcb9!2sHaware%20Nirmiti!5e0!3m2!1sen!2sin!4v1648213072284!5m2!1sen!2sin"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <!-- <div id="map" class="map" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/marker.webp" data-marker-name="PP Consultancy"></div> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15088.586942832944!2d73.1028725!3d19.0132547!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe26583dc2fba6e35!2sP%20P%20CONSULTANCY!5e0!3m2!1sen!2sin!4v1657954432806!5m2!1sen!2sin"  style="width:1100px; height:300px; ;border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
+        </div>
         <div class="gap-40"></div>
 
         <div class="row">

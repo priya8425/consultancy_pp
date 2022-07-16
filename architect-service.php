@@ -76,13 +76,13 @@ if(isset($_POST['submit'])){
           <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
             <ul class="list-unstyled">
               <li>
-                <a title="Facebook" href="https://facebbok.com/themefisher.com">
+                <a title="Facebook" href="https://facebbok.com">
                   <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
                 </a>
-                <a title="Twitter" href="https://twitter.com/themefisher.com">
+                <a title="Twitter" href="https://twitter.com">
                   <span class="social-icon"><i class="fab fa-twitter"></i></span>
                 </a>
-                <a title="Instagram" href="https://instagram.com/themefisher.com">
+                <a title="Instagram" href="https://instagram.com">
                   <span class="social-icon"><i class="fab fa-instagram"></i></span>
                 </a>
                 
@@ -131,9 +131,9 @@ if(isset($_POST['submit'])){
                 <ul class="nav service-menu">
                   <li><a href="e-marketing.php">E-Marketing Vendor</a></li>
                   <li><a href="real-estate.php">Real Estate</a></li>
-                  <li class="active"><a href="home-loan.php">Home Loan</a></li>
+                  <li><a href="home-loan.php">Home Loan</a></li>
                   <li><a href="registration.php">Registration</a></li>
-                  <li><a href="architect-service.php">Architect Services- Drawing & Planning</a></li>
+                  <li class="active"><a href="architect-service.php">Architect Services- Drawing & Planning</a></li>
                   <li><a href="civil-constructor.php">Civil Constructor</a></li>
                   <li><a href="iso-certificate.php">ISO Certification</a></li>
                   <li><a href="medical-checkup.php">Medical Health Checkup</a></li>
