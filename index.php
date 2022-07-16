@@ -1,32 +1,14 @@
 <?php
 include("include/config.php");
 if(isset($_POST['submit'])){
-
-  $Email = $_POST['email'];
- 
+  $email=$_POST['email'];
+ $sql="INSERT INTO `newsletter`(`email`) VALUES ('$email')";
+ if(mysqli_query($conn,$sql)){
+  echo"<script>alert('new record added succesfully!');</script>";
+ }else{
+  echo"<script>alert('connection failed!');</script>";
+ }
   
-$from = 'Enquiry <yadavpriya1425@gmail.com>' . "\r\n";
-$sendTo = 'Enquiry <maheshniwate10@gmail.com>';
-$subject = 'Enquiry';
-
-$fields = array('email' => 'email');
-
-try{
-  $emailText = "You have new message from contact form\n=============================\n";
-foreach($_POST as $key => $value){
-if(isset($fields[$key])){
-  $emailText.="$fields[$key]: $value\n";
-}
-}
-if( mail($sendTo,$subject,$emailText, "From:" .$from)){
-}else{
-echo "eeee $sendTo $subject $emailText $from";
-}
-}
-catch(\Exception $e){
-echo "not done";
-}
-
 }
 ?>
 <!DOCTYPE html>
@@ -354,220 +336,6 @@ echo "not done";
 
 
 
-    <section id="project-area" class="project-area solid-bg">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-12">
-            <h2 class="section-title">Work of Excellence</h2>
-            <h3 class="section-sub-title">Recent Projects</h3>
-          </div>
-        </div>
-        <!--/ Title row end -->
-
-        <div class="row ">
-          <div class="col-12">
-            <div class="shuffle-btn-group">
-              <label class="active" for="all">
-                <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">Show All
-              </label>
-              <label for="commercial">
-                <input type="radio" name="shuffle-filter" id="commercial" value="E-MARKETING">E-MARKETING
-              </label>
-              <label for="education">
-                <input type="radio" name="shuffle-filter" id="education" value="REAL ESTATE">REAL ESTATE
-              </label>
-              <label for="government">
-                <input type="radio" name="shuffle-filter" id="government" value="CCTV">CCTV Installation
-              </label>
-              <label for="infrastructure">
-                <input type="radio" name="shuffle-filter" id="infrastructure" value="ISO">ISO CERTIFICATION
-              </label>
-              <label for="residential">
-                <input type="radio" name="shuffle-filter" id="residential" value="MEDICAL">MEDICAL CHECK-UP
-              </label>
-
-            </div><!-- project filter end -->
-
-
-
-
-            <div class="row shuffle-wrapper">
-              <div class="col-1 shuffle-sizer"></div>
-
-              <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;E-MARKETING&quot;]">
-                <div class="project-img-container">
-                  <a class="gallery-popup" href="images/projects/emarketing.webp" aria-label="project-img">
-                    <img class="img-fluid" src="images/projects/emarketing.webp" alt="project-img"
-                      style="height: 305px;">
-                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                  </a>
-                  <div class="project-item-info">
-                    <div class="project-item-info-content">
-                      <h3 class="project-item-title">
-                        <a href="projects-single.php">GOVERNMENT E-MARKET PLACE VENDOR</a>
-                      </h3>
-                      <p class="project-cat">E-MARKET</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- shuffle item 1 end -->
-
-
-              <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;ISO&quot;]">
-                <div class="project-img-container">
-                  <a class="gallery-popup" href="images/projects/iso2.webp" aria-label="project-img">
-                    <img class="img-fluid" src="images/projects/iso2.webp" alt="project-img" style="height: 305px;">
-                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                  </a>
-                  <div class="project-item-info">
-                    <div class="project-item-info-content">
-                      <h3 class="project-item-title">
-                        <a href="projects-single.php">ISO CERTIFICATE</a>
-                      </h3>
-                      <p class="project-cat">Government</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- shuffle item 6 end -->
-
-              <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;REAL ESTATE&quot;]">
-                <div class="project-img-container">
-                  <a class="gallery-popup" href="images/projects/realestate1 (1).webp" aria-label="project-img">
-                    <img class="img-fluid" src="images/projects/realestate1 (1).webp" alt="project-img"
-                      style="height: 305px;">
-                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                  </a>
-                  <div class="project-item-info">
-                    <div class="project-item-info-content">
-                      <h3 class="project-item-title">
-                        <a href="projects-single.php">REAL ESTATE</a>
-                      </h3>
-                      <p class="project-cat">Government</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- shuffle item 2 end -->
-
-
-              <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;MEDICAL&quot;]">
-                <div class="project-img-container">
-                  <a class="gallery-popup" href="images/projects/eye.webp" aria-label="project-img">
-                    <img class="img-fluid" src="images/projects/eye.webp" alt="project-img" style="height: 305px;">
-                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                  </a>
-                  <div class="project-item-info">
-                    <div class="project-item-info-content">
-                      <h3 class="project-item-title">
-                        <a href="projects-single.php">EYE CHECK-UP</a>
-                      </h3>
-                      <p class="project-cat">Government</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- shuffle item 3 end -->
-
-              <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;CCTV&quot;]">
-                <div class="project-img-container">
-                  <a class="gallery-popup" href="images/projects/cctv2.webp" aria-label="project-img">
-                    <img class="img-fluid" src="images/projects/cctv2.webp" alt="project-img" style="height: 305px;">
-                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                  </a>
-                  <div class="project-item-info">
-                    <div class="project-item-info-content">
-                      <h3 class="project-item-title">
-                        <a href="projects-single.php">CCTV</a>
-                      </h3>
-                      <p class="project-cat">Government</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- shuffle item 5 end -->
-
-
-              <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;MEDICAL&quot;]">
-                <div class="project-img-container">
-                  <a class="gallery-popup" href="images/projects/heart.webp" aria-label="project-img">
-                    <img class="img-fluid" src="images/projects/heart.webp" alt="project-img" style="height: 305px;">
-                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                  </a>
-                  <div class="project-item-info">
-                    <div class="project-item-info-content">
-                      <h3 class="project-item-title">
-                        <a href="projects-single.php">HEART CHECK-UP</a>
-                      </h3>
-                      <p class="project-cat">Private</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- shuffle item 3 end -->
-
-              <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;CCTV&quot;]">
-                <div class="project-img-container">
-                  <a class="gallery-popup" href="images/projects/cctv1.webp" aria-label="project-img">
-                    <img class="img-fluid" src="images/projects/cctv1.webp" alt="project-img" style="height: 305px;">
-                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                  </a>
-                  <div class="project-item-info">
-                    <div class="project-item-info-content">
-                      <h3 class="project-item-title">
-                        <a href="projects-single.php">CCTV</a>
-                      </h3>
-                      <p class="project-cat">Private</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- shuffle item 4 end -->
-
-
-              <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;REAL ESTATE&quot;]">
-                <div class="project-img-container">
-                  <a class="gallery-popup" href="images/projects/realestate1 (2).webp" aria-label="project-img">
-                    <img class="img-fluid" src="images/projects/realestate1 (2).webp" alt="project-img"
-                      style="height: 305px;">
-                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                  </a>
-                  <div class="project-item-info">
-                    <div class="project-item-info-content">
-                      <h3 class="project-item-title">
-                        <a href="projects-single.php">REAL ESTATE</a>
-                      </h3>
-                      <p class="project-cat">Private</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- shuffle item 3 end -->
-
-
-
-              <div class="col-lg-4 col-sm-6 shuffle-item" data-groups="[&quot;ISO&quot;]">
-                <div class="project-img-container">
-                  <a class="gallery-popup" href="images/projects/iso1.webp" aria-label="project-img">
-                    <img class="img-fluid" src="images/projects/iso1.webp" alt="project-img" style="height: 305px;">
-                    <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-                  </a>
-                  <div class="project-item-info">
-                    <div class="project-item-info-content">
-                      <h3 class="project-item-title">
-                        <a href="projects-single.php">ISO CERTIFICATE</a>
-                      </h3>
-                      <p class="project-cat">Government</p>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- shuffle item 6 end -->
-            </div><!-- shuffle end -->
-          </div>
-
-          <div class="col-12">
-            <div class="general-btn text-center">
-              <a class="btn btn-primary" href="">View All Projects</a>
-            </div>
-          </div>
-
-        </div><!-- Content row end -->
-      </div>
-      <!--/ Container end -->
-    </section><!-- Project area end -->
 
     <section class="content">
       <div class="container">
@@ -649,9 +417,9 @@ echo "not done";
           <!--/ Testimonial carousel end-->
         </div>
 
-        <div class="col-lg-12 " style=" margin-top:8%" >
+        <div class="col-lg-12 " style=" margin-top:8%; background-color:#E5E4E2;" >
 
-          <h3 class="column-title " style="text-align:center">Preffered Channel partner</h3>
+          <h3 class="column-title " style="text-align:center;">Preffered Channel partner</h3>
 
           <div class="row all-clients">
             <?php
